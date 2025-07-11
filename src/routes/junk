@@ -1,0 +1,37 @@
+
+			<!-- {#if showImages} -->
+			<!-- 	<figure class="w-full h-1/2"> -->
+			<!-- 		<!-- svelte-ignore a11y_no_noninteractive_element_interactions--> -->
+			<!-- 		<!-- svelte-ignore a11y_click_events_have_key_events--> -->
+			<!-- 		<img -->
+			<!-- 			src={images[0]} -->
+			<!-- 			alt="Image1" -->
+			<!-- 			class="object-cover object-center select-none -->
+			<!--                 transition-[object-position,width,filter,opacity] duration-1000 ease-out" -->
+			<!-- 			in:fly={{ x: '-10vw', y: '-10vh', duration: 500, easing: sineInOut, delay: 0 }} -->
+			<!-- 			style:opacity="{showImages ? 100 : 0}%" -->
+			<!-- 		/> -->
+			<!-- 		<img -->
+			<!-- 			src={images[2]} -->
+			<!-- 			alt="Image3" -->
+			<!-- 			class="object-cover object-center select-none -->
+			<!--                 transition-[object-position,width,filter,opacity] duration-1000 ease-out" -->
+			<!-- 			in:fly={{ x: '-10vw', y: '10vh', duration: 500, easing: sineInOut, delay: 200 }} -->
+			<!-- 			style:opacity="{showImages ? 100 : 0}%" -->
+			<!-- 		/> -->
+			<!-- 	</figure> -->
+			<!-- {/if} -->
+
+			<!-- {#if showImages} -->
+			<!-- 	<figure class="w-full h-1/2"> -->
+			<!-- 		<img -->
+			<!-- 			src={images[1]} -->
+			<!-- 			alt="Image2" -->
+			<!-- 			class="object-cover object-center select-none -->
+			<!--                 transition-[object-position,width,filter,opacity] duration-1000 ease-out" -->
+			<!-- 			in:fly={{ x: '10vw', duration: 500, easing: sineInOut, delay: 100 }} -->
+			<!-- 			style:opacity="{showImages ? 100 : 0}%" -->
+			<!-- 		/> -->
+			<!-- 	</figure> -->
+			<!-- {/if} -->
+
