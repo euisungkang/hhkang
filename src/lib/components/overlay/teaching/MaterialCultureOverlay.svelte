@@ -24,7 +24,7 @@
 
 {#if visible}
 	<!-- Letters -->
-	<div class="relative w-full h-full font-tny text-[20vw] pointer-events-none" style:color>
+	<div class="relative w-full h-full font-tny pointer-events-none" style:color>
 		<div>
 			<div class="absolute top-[10%] left-[15%]">
 				<LetterSlide reverse={letterReverse} letter="G" />

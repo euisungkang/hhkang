@@ -12,7 +12,6 @@
 	} = $props();
 
 	const line1: string = 'ASSISTANT PROFESSOR OF EAST ASIAN LANGUAGES & CULTURES';
-	// const line2: string = invert ? 'at Washington University in St. Louis' : 'INSPIRED BY ARISTIDE';
 	const line2: string = 'AT WASHINGTON UNIVERSITY IN ST. LOUIS';
 </script>
 

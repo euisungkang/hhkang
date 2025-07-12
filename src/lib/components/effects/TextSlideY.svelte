@@ -6,8 +6,8 @@
 	let {
 		text,
 		center = true,
-		delay,
-		letterDelay,
+		delay = 0,
+		letterDelay = 50,
 		visibleDelay = 0,
 		stagger = false,
 		distance,
@@ -41,7 +41,7 @@
 						y: distance ?? '2vh',
 						easing: sineOut,
 						duration: duration,
-						delay: i * (letterDelay ?? 50),
+						delay: i * letterDelay,
 						opacity: 1
 					}}
 				>
@@ -59,7 +59,7 @@
 				y: distance ?? '2vh',
 				easing: sineOut,
 				duration: duration,
-				delay: delay ?? 0,
+				delay: delay,
 				opacity: 1
 			}}
 		>
