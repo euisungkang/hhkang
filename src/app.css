@@ -30,8 +30,20 @@
     font-style: normal;
   }
   @font-face {
+    font-family: 'TNY';
+    src: url('/fonts/tny/TNY.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
     font-family: 'JWS';
     src: url('/fonts/jws/jws.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/inter/Inter.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }

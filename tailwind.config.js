@@ -5,7 +5,9 @@ export default {
     extend: {
       fontFamily: {
         'baskervville': ['"Baskervville"'],
-        'jws': ['"JWS"']
+        'tny': ['"TNY"'],
+        'jws': ['"JWS"'],
+        'inter': ['"Inter"'],
       },
       transitionProperty: {
         'width': 'width',
@@ -14,22 +16,22 @@ export default {
       typography: {
         dark: {
           css: {
-            '--tw-prose-body': '#e6e6e6',
-            '--tw-prose-headings': '#e6e6e6',
-            '--tw-prose-lead': '#e6e6e6',
-            '--tw-prose-links': '#e6e6e6',
-            '--tw-prose-bold': '#e6e6e6',
-            '--tw-prose-counters': '#e6e6e6',
-            '--tw-prose-bullets': '#e6e6e6',
-            '--tw-prose-hr': '#e6e6e6',
-            '--tw-prose-quotes': '#e6e6e6',
-            '--tw-prose-quote-borders': '#e6e6e6',
-            '--tw-prose-captions': '#e6e6e6',
-            '--tw-prose-code': '#e6e6e6',
-            '--tw-prose-pre-code': '#e6e6e6',
-            '--tw-prose-pre-bg': '#e6e6e6',
-            '--tw-prose-th-borders': '#e6e6e6',
-            '--tw-prose-td-borders': '#e6e6e6',
+            '--tw-prose-body': '#AEAEAE',
+            '--tw-prose-headings': '#AEAEAE',
+            '--tw-prose-lead': '#AEAEAE',
+            '--tw-prose-links': '#AEAEAE',
+            '--tw-prose-bold': '#AEAEAE',
+            '--tw-prose-counters': '#AEAEAE',
+            '--tw-prose-bullets': '#AEAEAE',
+            '--tw-prose-hr': '#AEAEAE',
+            '--tw-prose-quotes': '#AEAEAE',
+            '--tw-prose-quote-borders': '#AEAEAE',
+            '--tw-prose-captions': '#AEAEAE',
+            '--tw-prose-code': '#AEAEAE',
+            '--tw-prose-pre-code': '#AEAEAE',
+            '--tw-prose-pre-bg': '#AEAEAE',
+            '--tw-prose-th-borders': '#AEAEAE',
+            '--tw-prose-td-borders': '#AEAEAE',
           }
         },
         light: {

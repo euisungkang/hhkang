@@ -9,7 +9,7 @@ export type Work = {
 };
 
 export type Works = Record<
-  'Monograph' | 'Peer-Reviewed Articles' | 'Book Chapters' | 'Reviews' | 'Other Publications',
+  'MONOGRAPH' | 'PEER-REVIEWED ARTICLES' | 'BOOK CHAPTERS' | 'REVIEWS' | 'OTHER PUBLICATIONS',
   Array<Work>
 >;
 
@@ -17,14 +17,14 @@ const imgs = [p1, p2, p3];
 const rand = () => imgs[Math.floor(Math.random() * imgs.length)];
 
 export const works: Works = {
-  'Monograph': [
+  'MONOGRAPH': [
     {
       citation: 'Artisanal Heart: Korea, Confucian Statecraft, and the Sciences of Making (under contract with The University of Chicago Press)',
       image: rand(),
       index: 0,
     },
   ],
-  'Peer-Reviewed Articles': [
+  'PEER-REVIEWED ARTICLES': [
     {
       citation: '“Global History and the Measures of Early Modern Technology: Europe, East Asia, and the Case of Smoothbore Ballistics,” Journal of World History 36, no. 2 (2025): 169–204',
       image: rand(),
@@ -66,7 +66,7 @@ export const works: Works = {
       index: 8,
     },
   ],
-  'Book Chapters': [
+  'BOOK CHAPTERS': [
     {
       citation: '“Firearms, Fluidity, and the Global Technology Circuit: Conflict, 1450–1650,” for A Cultural History of Technology in the Age of Encounters (1450–1650), ed. Mackenzie Cooley (London: Bloomsbury; forthcoming)',
       image: rand(),
@@ -83,7 +83,7 @@ export const works: Works = {
       index: 11,
     },
   ],
-  'Reviews': [
+  'REVIEWS': [
     {
       citation: 'Review of Lim Jongtae 임종태, Travel, Reform, and Science and Technology in Eighteenth-Century Korea 여행과 개혁, 그리고 18세기 조선의 과학기술, Journal of the Korean History of Science Society 46, no. 2 (2024): 427–429',
       image: rand(),
@@ -100,7 +100,7 @@ export const works: Works = {
       index: 14,
     },
   ],
-  'Other Publications': [
+  'OTHER PUBLICATIONS': [
     {
       citation: '“Silloker,” database and search engine for Korean historical chronicles, June 1, 2022–present, https://silloker.com. Co-designed with Michelle Suh',
       image: rand(),

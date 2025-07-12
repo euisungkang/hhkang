@@ -52,8 +52,8 @@
 </script>
 
 {#if selectedIndex != -1}
-	<div class="absolute top-0 left-0 w-2/3 h-full flex items-center justify-start pl-[5vw]">
-		<figure class="max-w-[25vw] max-h-[75vh]" in:fade={{ duration: 500, easing: sineOut }}>
+	<div class="absolute top-[50vh] left-[15%] w-2/3 h-full flex items-center justify-start">
+		<figure class="max-w-[25vw] max-h-[75vh]" transition:fade={{ duration: 300, easing: sineOut }}>
 			<img
 				src={images[selectedIndex].image}
 				alt="Zoomed Imaged"
@@ -65,7 +65,7 @@
 
 <!-- <div class="sticky w-full h-auto"> -->
 <div
-	class="relative w-full h-full top-0 -right-[65%] flex flex-col
+	class="relative w-full h-full top-[50vh] -right-[65%] flex flex-col
     transition-transform duration-1000 ease-out"
 	style:transform="rotate(-{degree}deg)"
 >

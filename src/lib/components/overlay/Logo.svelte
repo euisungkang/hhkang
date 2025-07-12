@@ -19,7 +19,7 @@
 
 <a
 	aria-label="Home Logo Button"
-	class="absolute font-baskervville text-5xl top-8 left-12 z-50"
+	class="absolute font-baskervville text-5xl top-8 left-12 z-50 transition-colors duration-1000 ease-out"
 	href="/"
 	style:color={overlayColor}
 >

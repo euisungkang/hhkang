@@ -5,10 +5,12 @@
 
 	let {
 		text,
-		letterDelay
+		letterDelay,
+		reverse = false
 	}: {
 		text: string;
 		letterDelay?: number;
+		reverse?: boolean;
 	} = $props();
 
 	let visible: boolean = $state(false);
