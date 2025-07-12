@@ -68,7 +68,7 @@
 			<div class="absolute top-[55%] left-[15.5%]">
 				<LetterSlide reverse={letterReverse} letter="S" />
 			</div>
-			<div class="absolute top-[55%] left-[17.5%]">
+			<div class="absolute top-[55%] left-[20%] font-inter">
 				<LetterSlide reverse={letterReverse} letter="." />
 			</div>
 			<div class="absolute top-[55%] left-[30%]">
