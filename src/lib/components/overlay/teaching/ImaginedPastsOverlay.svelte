@@ -70,7 +70,7 @@
 			</div>
 		</div>
 
-		<div class="absolute top-[75%] leading-[4vh] left-[50%] text-[4vh] tracking-wider">
+		<div class="absolute top-[75%] leading-[4vh] left-[50%] text-[4vh] tracking-wider select-none">
 			<TextSlideY
 				text={'TRADITIONAL KOREAN CULTURE THROUGH FILM'}
 				center={false}

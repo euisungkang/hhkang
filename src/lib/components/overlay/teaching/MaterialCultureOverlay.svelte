@@ -91,7 +91,9 @@
 			</div>
 		</div>
 
-		<div class="absolute top-[75%] leading-[4vh] left-[62.5%] text-[4vh] tracking-wider">
+		<div
+			class="absolute top-[75%] leading-[4vh] left-[62.5%] text-[4vh] tracking-wider select-none"
+		>
 			<TextSlideY
 				text={'A HISTORY OF MATERIAL CULTURE'}
 				center={false}

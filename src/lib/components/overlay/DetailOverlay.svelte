@@ -62,7 +62,10 @@
 {/snippet}
 
 {#snippet explore()}
-	<a href={path ? path : '/#'} class="flex flex-col items-end text-xs leading-3 cursor-pointer">
+	<a
+		href={path ? path : '/#'}
+		class="flex flex-col items-end text-xs leading-3 cursor-pointer select-none"
+	>
 		<TextSlideX text={invert ? 'RETURN' : customLabel} letterDelay={50} />
 		<div class="relative bg-white w-full">
 			<div

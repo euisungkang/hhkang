@@ -24,7 +24,7 @@
 {/if}
 
 <div
-	class="absolute font-jws text-md space-x-12 top-12 right-12
+	class="absolute font-jws text-md space-x-12 top-12 right-12 select-none
         flex items-end leading-4 z-50 transition-colors duration-1000 ease-out"
 	style:color={overlayColor}
 >
