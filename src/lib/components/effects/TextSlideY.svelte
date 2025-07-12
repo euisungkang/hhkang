@@ -10,7 +10,8 @@
 		letterDelay,
 		visibleDelay = 0,
 		stagger = false,
-		distance
+		distance,
+		duration = 1000
 	}: {
 		text: string;
 		center?: boolean;
@@ -19,6 +20,7 @@
 		visibleDelay?: number;
 		stagger?: boolean;
 		distance?: string;
+		duration?: number;
 	} = $props();
 
 	let visible: boolean = $state(false);
@@ -38,7 +40,7 @@
 					in:fly={{
 						y: distance ?? '2vh',
 						easing: sineOut,
-						duration: 1000,
+						duration: duration,
 						delay: i * (letterDelay ?? 50),
 						opacity: 1
 					}}
@@ -56,7 +58,7 @@
 			in:fly={{
 				y: distance ?? '2vh',
 				easing: sineOut,
-				duration: 1000,
+				duration: duration,
 				delay: delay ?? 0,
 				opacity: 1
 			}}

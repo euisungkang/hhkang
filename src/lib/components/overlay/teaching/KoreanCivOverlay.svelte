@@ -47,40 +47,40 @@
 		</div>
 
 		<div>
-			<div class="absolute top-[55%] left-[20%]">
+			<div class="absolute top-[55%] left-[25%]">
 				<LetterSlide reverse={letterReverse} letter="C" />
 			</div>
-			<div class="absolute top-[55%] left-[25%]">
+			<div class="absolute top-[55%] left-[30%]">
 				<LetterSlide reverse={letterReverse} letter="I" />
-			</div>
-			<div class="absolute top-[55%] left-[27.5%]">
-				<LetterSlide reverse={letterReverse} letter="V" />
 			</div>
 			<div class="absolute top-[55%] left-[32.5%]">
-				<LetterSlide reverse={letterReverse} letter="I" />
+				<LetterSlide reverse={letterReverse} letter="V" />
 			</div>
-			<div class="absolute top-[55%] left-[35%]">
-				<LetterSlide reverse={letterReverse} letter="L" />
+			<div class="absolute top-[55%] left-[37.5%]">
+				<LetterSlide reverse={letterReverse} letter="I" />
 			</div>
 			<div class="absolute top-[55%] left-[40%]">
-				<LetterSlide reverse={letterReverse} letter="I" />
+				<LetterSlide reverse={letterReverse} letter="L" />
 			</div>
-			<div class="absolute top-[55%] left-[42.5%]">
-				<LetterSlide reverse={letterReverse} letter="Z" />
+			<div class="absolute top-[55%] left-[45%]">
+				<LetterSlide reverse={letterReverse} letter="I" />
 			</div>
 			<div class="absolute top-[55%] left-[47.5%]">
-				<LetterSlide reverse={letterReverse} letter="A" />
+				<LetterSlide reverse={letterReverse} letter="Z" />
 			</div>
 			<div class="absolute top-[55%] left-[52.5%]">
-				<LetterSlide reverse={letterReverse} letter="T" />
+				<LetterSlide reverse={letterReverse} letter="A" />
 			</div>
 			<div class="absolute top-[55%] left-[57.5%]">
+				<LetterSlide reverse={letterReverse} letter="T" />
+			</div>
+			<div class="absolute top-[55%] left-[62.5%]">
 				<LetterSlide reverse={letterReverse} letter="I" />
 			</div>
-			<div class="absolute top-[55%] left-[60%]">
+			<div class="absolute top-[55%] left-[65%]">
 				<LetterSlide reverse={letterReverse} letter="O" />
 			</div>
-			<div class="absolute top-[55%] left-[65%]">
+			<div class="absolute top-[55%] left-[70%]">
 				<LetterSlide reverse={letterReverse} letter="N" />
 			</div>
 		</div>

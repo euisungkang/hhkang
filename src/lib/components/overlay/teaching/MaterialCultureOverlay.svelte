@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import LetterSlide from '$lib/components/effects/LetterSlide.svelte';
 	import DetailOverlay from '../DetailOverlay.svelte';
-	import TextSlideX from '$lib/components/effects/TextSlideX.svelte';
+	import TextSlideY from '$lib/components/effects/TextSlideY.svelte';
 
 	let {
 		color,
@@ -91,8 +91,16 @@
 			</div>
 		</div>
 
-		<div class="absolute top-[75%] left-[62.5%] text-[2.5vw] tracking-wide">
-			<TextSlideX text={'A HISTORY OF MATERIAL CULTURE'} letterDelay={0} />
+		<div class="absolute top-[75%] leading-[4vh] left-[62.5%] text-[4vh] tracking-wider">
+			<TextSlideY
+				text={'A HISTORY OF MATERIAL CULTURE'}
+				center={false}
+				distance={'4vh'}
+				visibleDelay={500}
+				letterDelay={10}
+				duration={700}
+				stagger={true}
+			/>
 		</div>
 	</div>
 

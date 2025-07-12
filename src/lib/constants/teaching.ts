@@ -13,7 +13,7 @@ export type Image = {
 export const images: Array<Image> = [
   {
     image: kitchenstudio,
-    backgroundColor: '#4B2B1F',
+    backgroundColor: '#e2cbb5',
     overlayColor: '#778379',
     // backgroundColor: '#D6BC98',
     // overlayColor: '#748873'
@@ -38,6 +38,6 @@ export const images: Array<Image> = [
   {
     image: stem,
     backgroundColor: '#121212',
-    overlayColor: '#FFF2F2'
+    overlayColor: '#aeb4ae'
   },
 ];

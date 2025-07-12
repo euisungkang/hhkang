@@ -10,6 +10,7 @@
 	import MaterialCultureOverlay from '$lib/components/overlay/teaching/MaterialCultureOverlay.svelte';
 	import KoreanCivOverlay from '$lib/components/overlay/teaching/KoreanCivOverlay.svelte';
 	import StemOverlay from '$lib/components/overlay/teaching/STEMOverlay.svelte';
+	import ArrowHelper from '$lib/components/overlay/ArrowHelper.svelte';
 
 	let mouseDownX: number = 0;
 	let mouseUpX: number = 50;
@@ -27,11 +28,16 @@
 		backgroundColor: '#121212'
 	});
 
+	let mouseTimeout: ReturnType<typeof setTimeout>;
+
 	function mouseDownAt(e: MouseEvent) {
-		mouseDownX = e.clientX;
+		mouseTimeout = setTimeout(() => {
+			mouseDownX = e.clientX;
+		}, 100);
 	}
 
 	function mouseUpAt() {
+		clearTimeout(mouseTimeout);
 		mouseDownX = 0;
 		mouseUpX = percentage;
 	}
@@ -74,17 +80,23 @@
 		colorState.overlayColor = images[i].overlayColor;
 	}
 
+	function handleKeydown(e: KeyboardEvent) {
+		if (e.key === 'ArrowLeft' && selectedIndex > 0) expandImage(selectedIndex - 1);
+		else if (e.key === 'ArrowRight' && selectedIndex < images.length - 1)
+			expandImage(selectedIndex + 1);
+		console.log(selectedIndex);
+	}
+
 	onMount(() => {
 		setTimeout(() => {
 			trackVisible = true;
 			expandImage(selectedIndex);
 			console.log('<Developed by Easton Kang> https://eastonkang.com');
-			// expandImage(6);
 		}, 500);
 	});
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:window on:keydown={handleKeydown} bind:innerWidth />
 
 <Tabs overlayColor={colorState.overlayColor} />
 <Logo overlayColor={colorState.overlayColor} />
@@ -101,6 +113,10 @@
 	onmousemove={(e) => mouseMove(e)}
 >
 	<div class="h-full w-full relative">
+		{#if selectedIndex == -1 && percentage >= 35}
+			<ArrowHelper color={colorState.overlayColor} />
+		{/if}
+
 		<div
 			class="flex absolute top-[50%] w-full items-center justify-start
              transition-transform duration-1000 ease-out"

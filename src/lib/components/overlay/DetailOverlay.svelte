@@ -17,7 +17,7 @@
 	}: {
 		color: string;
 		leftField: string;
-		rightFields: string;
+		rightField: string;
 		invert: boolean;
 		customLabel?: string;
 		path?: string;
