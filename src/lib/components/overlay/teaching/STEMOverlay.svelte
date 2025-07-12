@@ -108,7 +108,7 @@
 		{leftField}
 		{rightField}
 		invert={false}
-		customLabel={'COURSE WEBSITE'}
+		customLabel={''}
 		path={'https://www.kitchenstudiofactory.com/'}
 	/>
 {/if}
