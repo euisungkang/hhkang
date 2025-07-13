@@ -4,9 +4,13 @@
 	const text: string = 'HH';
 
 	let {
-		overlayColor = '#FFFFFF'
+		overlayColor = '#FFFFFF',
+		sticky = false,
+		scrollY = 0
 	}: {
 		overlayColor: string;
+		scrollY?: number;
+		sticky?: boolean;
 	} = $props();
 </script>
 
@@ -17,12 +21,24 @@
 <!-- 	/> -->
 <!-- </svg> -->
 
-<a
-	aria-label="Home Logo Button"
-	class="absolute font-baskervville text-5xl top-8 left-12 z-50
-        transition-colors duration-1000 ease-out select-none"
-	href="/"
-	style:color={overlayColor}
->
-	<TextSlideX {text} />
-</a>
+{#if !sticky}
+	<a
+		aria-label="Home Logo Button"
+		class="absolute font-baskervville text-5xl top-8 left-12 z-50
+          transition-colors duration-1000 ease-out select-none"
+		href="/"
+		style:color={overlayColor}
+	>
+		<TextSlideX {text} />
+	</a>
+{:else}
+	<a
+		aria-label="Home Logo Button"
+		class="absolute font-baskervville text-5xl top-8 left-12 text-[#e6e6e6]
+          z-50 mix-blend-difference select-none"
+		href="/"
+		style="transform:translateY({scrollY}px);"
+	>
+		<TextSlideX {text} />
+	</a>
+{/if}

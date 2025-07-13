@@ -8,6 +8,7 @@ export default {
         'tny': ['"TNY"'],
         'jws': ['"JWS"'],
         'inter': ['"Inter"'],
+        'crimson': ['"Crimson"'],
       },
       transitionProperty: {
         'width': 'width',

@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { sineOut } from 'svelte/easing';
 
 	let {
 		letter,
 		reverse,
+		load = true,
 		height = '30vh',
 		size = '20vw',
 		distance = 8,
@@ -13,6 +14,7 @@
 	}: {
 		letter: string;
 		reverse: boolean;
+		load?: boolean;
 		height?: string;
 		size?: string;
 		distance?: number;
@@ -26,7 +28,7 @@
 	});
 </script>
 
-{#if visible}
+{#if visible && load}
 	<div class="inline-block overflow-hidden" style:height>
 		<div
 			class="inline-block overflow-hidden select-none h-full"
@@ -38,6 +40,12 @@
 				duration: 1000,
 				opacity: 1,
 				delay: delay
+			}}
+			out:fly={{
+				x: reverse ? `${-distance}vw` : `${distance}vw`,
+				easing: sineOut,
+				duration: 1000,
+				opacity: 1
 			}}
 		>
 			{letter}
