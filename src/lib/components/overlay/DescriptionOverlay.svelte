@@ -16,8 +16,8 @@
 </script>
 
 <div
-	class="absolute text-xs leading-2.5 flex flex-col font-jws
-        {invert ? 'bottom-12 left-12 items-start' : 'top-12 right-12 items-end'}"
+	class="absolute text-[0.6rem] lg:text-xs leading-2.5 flex flex-col font-jws
+        bottom-8 left-8 lg:bottom-12 lg:left-12 items-start justify-end mix-blend-difference"
 	style:color={overlayColor}
 >
 	<TextSlideY text={line1} stagger={false} {delay} />

@@ -13,7 +13,8 @@
 </script>
 
 <div
-	class="absolute text-xs leading-2.5 flex flex-col bottom-12 right-12 items-start font-jws"
+	class="absolute text-xs leading-2.5 flex-col bottom-12 right-12
+        items-start font-jws hidden lg:flex"
 	style:color={overlayColor}
 >
 	<TextSlideY text={line1} stagger={false} {delay} />

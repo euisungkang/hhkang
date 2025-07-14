@@ -23,7 +23,7 @@
 			the history of science, the history of technology, and global material culture.
 		</div>
 		<div class="w-full h-10/12 flex">
-			<div class="w-[60%] h-full text-[1.3rem] flex flex-col font-crimson text-justify pr-8">
+			<div class="w-[60%] h-full text-[1.3rem] flex flex-col font-crimson pr-8">
 				<div class="h-2/3 w-full flex items-start">
 					Kang’s research focuses on the history of East Asian science and technology in a global
 					context, especially on the knowledge of Chosŏn Korean (1392–1910) artisans and military

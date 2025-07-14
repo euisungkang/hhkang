@@ -17,7 +17,7 @@
 		<TextSlideX text="_2" />
 	</div>
 
-	<figure class="absolute left-[7.5vw] top-[10vh] w-[85vw]">
+	<figure class="absolute left-[7.5vw] top-[10vh] w-[85vw] max-h-[83vh] overflow-y-hidden">
 		<img src={gun} alt="Choson Gun" class="object-cover" />
 	</figure>
 

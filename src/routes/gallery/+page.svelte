@@ -19,7 +19,7 @@
 	style:background-color={colorState.backgroundColor}
 	style:color={colorState.overlayColor}
 >
-	<div class="h-full w-full grid grid-cols-4 gap-y-32 gap-x-4">
+	<div class="h-full w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-y-32 gap-x-4">
 		{#each images as image, i}
 			<Card index={i} {image} />
 		{/each}

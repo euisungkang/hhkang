@@ -6,11 +6,11 @@
 	let {
 		text,
 		letterDelay,
-		reverse = false
+		load = true
 	}: {
 		text: string;
 		letterDelay?: number;
-		reverse?: boolean;
+		load?: boolean;
 	} = $props();
 
 	let visible: boolean = $state(false);
@@ -33,7 +33,7 @@
 				{/if}
 			</div>
 
-			{#if visible}
+			{#if visible && load}
 				<div
 					class="absolute top-0"
 					in:slide={{
@@ -41,6 +41,11 @@
 						easing: sineOut,
 						duration: 1000,
 						delay: i * (letterDelay ?? 50)
+					}}
+					out:slide={{
+						axis: 'x',
+						easing: sineOut,
+						duration: 1000 / 4
 					}}
 				>
 					{#if c != ' '}

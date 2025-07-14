@@ -10,7 +10,8 @@
 		letterDelay = 50,
 		visibleDelay = 0,
 		stagger = false,
-		distance,
+		distance = '2vh',
+		load = true,
 		duration = 1000
 	}: {
 		text: string;
@@ -20,6 +21,7 @@
 		visibleDelay?: number;
 		stagger?: boolean;
 		distance?: string;
+		load?: boolean;
 		duration?: number;
 	} = $props();
 
@@ -35,13 +37,20 @@
 <div class="flex items-start overflow-hidden {center ? 'justify-center' : 'justify-start'}">
 	{#if stagger}
 		{#each text as c, i}
-			{#if visible}
+			{#if visible && load}
 				<div
 					in:fly={{
-						y: distance ?? '2vh',
+						y: distance,
 						easing: sineOut,
 						duration: duration,
 						delay: i * letterDelay,
+						opacity: 1
+					}}
+					out:fly={{
+						y: distance,
+						easing: sineOut,
+						duration: duration / 2,
+						delay: 0,
 						opacity: 1
 					}}
 				>
@@ -53,13 +62,20 @@
 				</div>
 			{/if}
 		{/each}
-	{:else if visible}
+	{:else if visible && load}
 		<div
 			in:fly={{
-				y: distance ?? '2vh',
+				y: distance,
 				easing: sineOut,
 				duration: duration,
 				delay: delay,
+				opacity: 1
+			}}
+			out:fly={{
+				y: distance,
+				easing: sineOut,
+				duration: duration / 2,
+				delay: 0,
 				opacity: 1
 			}}
 		>

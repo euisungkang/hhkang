@@ -14,7 +14,8 @@
 	let load: boolean = $state(false);
 	let selectedIndex: number = $state(-1);
 
-	const textColor: string = '#e6e6e6';
+	const textColor: string = '#121212';
+	const backgroundColor: string = '#e6e6e6';
 
 	function onMouseEnter(work: Work) {
 		selectedIndex = work.index;
@@ -35,11 +36,14 @@
 </script>
 
 <div
-	class="absolute left-0 top-0 min-h-screen h-auto flex justify-center dark w-[100%] bg-[#121212] overflow-x-clip"
+	class="absolute left-0 top-0 min-h-screen h-auto flex justify-center w-[100%] overflow-x-clip"
+	style:background-color={backgroundColor}
 	style:color={textColor}
 >
-	<div class=" h-full w-[50%] float-left pt-56 pb-32 flex justify-end">
-		<div class="h-full w-2/3 prose prose-dark font-crimson max-w-none text-justify">
+	<div
+		class=" h-full w-full lg:w-[50%] float-left px-8 lg:px-0 pt-32 lg:pt-56 pb-32 flex justify-end"
+	>
+		<div class="h-full w-full lg:w-2/3 prose prose-light font-crimson max-w-none">
 			{#each Object.entries(works) as [k, v]}
 				<h2
 					class="transform-[opacity] duration-200 font-bold"
@@ -55,7 +59,7 @@
 						<div
 							onmouseenter={() => onMouseEnter(work)}
 							onmouseleave={() => onMouseLeave(work)}
-							class="transform-[opacity] text-lg duration-200 leading-5"
+							class="transform-[opacity] text-md lg:text-lg duration-200 leading-5"
 							style:opacity="{selectedIndex == -1 || work.index == selectedIndex ? 100 : 50}%"
 							aria-controls="0,1"
 							aria-valuenow="0"
@@ -87,10 +91,10 @@
 		</div>
 	</div>
 
-	<div class="sticky w-[50%] h-[100%] right-0 float-right top-0">
+	<div class="sticky w-[50%] h-[100%] right-0 float-right top-0 hidden lg:flex">
 		<Carousel images={flatImages} {selectedIndex} />
 	</div>
 
 	<Logo overlayColor={textColor} />
-	<Tabs overlayColor={textColor} cutoff={true} />
+	<Tabs overlayColor={textColor} {backgroundColor} cutoff={true} />
 </div>
