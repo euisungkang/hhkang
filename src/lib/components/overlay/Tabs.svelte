@@ -86,7 +86,7 @@
 </div>
 
 <div
-	class="absolute font-jws text-md space-x-12 top-12 right-12 select-none hidden
+	class="absolute font-jws text-md space-x-12 text-sm 2xl:text-base top-8 2xl:top-12 right-12 select-none hidden
         lg:flex items-end leading-4 z-50 transition-colors duration-1000 ease-out"
 	style:color={overlayColor}
 >

@@ -11,14 +11,12 @@
 		color,
 		leftField,
 		rightField,
-		invert = false,
 		customLabel = 'EXPLORE',
 		path
 	}: {
 		color: string;
 		leftField: string;
 		rightField: string;
-		invert: boolean;
 		customLabel?: string;
 		path?: string;
 	} = $props();
@@ -66,7 +64,7 @@
 		href={path ? path : '/#'}
 		class="flex flex-col items-end text-xs leading-3 cursor-pointer select-none"
 	>
-		<TextSlideX text={invert ? 'RETURN' : customLabel} letterDelay={50} />
+		<TextSlideX text={customLabel} letterDelay={50} />
 		<div class="relative bg-white w-full">
 			<div
 				class="border-t transition-[width] duration-1000 ease-out
@@ -80,36 +78,27 @@
 
 <!-- Bottom Panel -->
 <div
-	class={`absolute w-full flex justify-center font-jws
-          ${invert ? 'top-12 items-start' : 'bottom-12 items-end'}`}
+	class="absolute w-full flex justify-center font-jws
+         bottom-8 2xl:bottom-12 items-end"
 	style:color
 >
 	<!-- Middle -->
-	<div class="w-24 space-y-4 flex flex-col items-center justify-end">
-		{#if invert}
-			<!-- Plus -->
-			{@render plus()}
-			<!-- Line -->
-			{@render line()}
-			<!-- Explore -->
-			{@render explore()}
-		{:else}
-			<!-- Explore -->
-			{@render explore()}
-			<!-- Line -->
-			{@render line()}
-			<!-- Plus -->
-			{@render plus()}
-		{/if}
+	<div class="w-24 space-y-2 2xl:space-y-4 flex flex-col items-center justify-end">
+		<!-- Explore -->
+		{@render explore()}
+		<!-- Line -->
+		{@render line()}
+		<!-- Plus -->
+		{@render plus()}
 	</div>
 </div>
 
 <!-- Left -->
-<div class="absolute bottom-12 left-12">
+<div class="absolute bottom-8 2xl:bottom-12 left-12">
 	<CourseType {color} text={leftField} />
 </div>
 
 <!-- Right -->
-<div class="absolute bottom-12 right-12">
+<div class="absolute bottom-8 2xl:bottom-12 right-12">
 	<ImageCitation {color} text={rightField} />
 </div>

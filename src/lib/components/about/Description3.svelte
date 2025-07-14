@@ -27,7 +27,7 @@
 	<!-- </figure> -->
 
 	<div
-		class="absolute left-[70vw] top-[35vh] w-[45ch] text-justify font-crimson text-[1.3rem] text-[#e6e6e6] mix-blend-difference"
+		class="absolute left-[65vw] top-[35vh] w-[45ch] text-justify font-crimson text-base 2xl:text-[1.3rem] text-[#e6e6e6] mix-blend-difference"
 	>
 		His research has also appeared (or is forthcoming) in the fields of ethnomusicology, diplomatic
 		history, and global military history, in venues such as Routledge Handbook of Asian Music,

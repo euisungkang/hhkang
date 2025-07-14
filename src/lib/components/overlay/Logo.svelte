@@ -24,7 +24,7 @@
 {#if !sticky}
 	<a
 		aria-label="Home Logo Button"
-		class="absolute font-baskervville text-3xl lg:text-5xl top-8 left-8 lg:left-12 z-50
+		class="absolute font-baskervville text-3xl 2xl:text-5xl top-6 2xl:top-8 left-8 xl:left-12 z-50
           transition-colors duration-1000 ease-out select-none"
 		href="/"
 		style:color={overlayColor}
@@ -34,7 +34,7 @@
 {:else}
 	<a
 		aria-label="Home Logo Button"
-		class="absolute font-baskervville text-3xl lg:text-5xl top-8 left-8 lg:left-12 text-[#e6e6e6]
+		class="absolute font-baskervville text-3xl 2xl:text-5xl top-6 2xl:top-8 left-8 xl:left-12 text-[#e6e6e6]
           z-50 mix-blend-difference select-none"
 		href="/"
 		style="transform:translateY({scrollY}px);"

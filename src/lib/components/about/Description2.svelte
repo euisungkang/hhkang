@@ -22,7 +22,7 @@
 	</figure>
 
 	<div
-		class="absolute left-[60vw] top-[50vh] w-[50ch] text-justify font-crimson text-[1.3rem] text-[#e6e6e6] mix-blend-difference"
+		class="absolute left-[60vw] top-[50vh] w-[50ch] font-crimson text-base 2xl:text-[1.3rem] text-[#e6e6e6] mix-blend-difference"
 	>
 		Kang is a digital humanist as well. His DH projects include a network analysis of international
 		criminals in seventeenth-century Nagasaki, published in the Journal of Cultural Analytics. He

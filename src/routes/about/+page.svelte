@@ -31,8 +31,13 @@
 	// $inspect(scrollY, innerHeight, progress);
 
 	$effect(() => {
-		if (scrollY == innerHeight) page2Load = true;
-		else if (scrollY == innerHeight * 2) page3Load = true;
+		if (scrollY == innerHeight) {
+			page2Load = true;
+			// snap.add(innerHeight);
+		} else if (scrollY == innerHeight * 2) {
+			page3Load = true;
+			// snap.add(innerHeight * 2);
+		}
 	});
 
 	onMount(() => {
@@ -47,9 +52,6 @@
 		// snap = new Snap(lenis, {
 		// 	type: 'proximity'
 		// });
-		// for (let i = 0; i < 3; i++) {
-		// 	snap.add(i * innerHeight);
-		// }
 	});
 
 	onDestroy(() => {

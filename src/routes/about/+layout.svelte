@@ -5,10 +5,10 @@
 	let { children } = $props();
 </script>
 
-<div class="hidden lg:flex">
+<div class="hidden xl:flex">
 	{@render children()}
 </div>
 
-<div class="flex lg:hidden">
+<div class="flex xl:hidden">
 	<AboutMobile textColor={'#121212'} backgroundColor={'#e6e6e6'} />
 </div>

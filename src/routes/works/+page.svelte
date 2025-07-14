@@ -41,9 +41,9 @@
 	style:color={textColor}
 >
 	<div
-		class=" h-full w-full lg:w-[50%] float-left px-8 lg:px-0 pt-32 lg:pt-56 pb-32 flex justify-end"
+		class=" h-full w-full xl:w-[50%] float-left px-8 xl:px-0 pt-32 xl:pt-56 pb-32 flex justify-end"
 	>
-		<div class="h-full w-full lg:w-2/3 prose prose-dark font-crimson max-w-none">
+		<div class="h-full w-full xl:w-3/4 2xl:w-2/3 prose prose-dark font-crimson max-w-none">
 			{#each Object.entries(works) as [k, v]}
 				<h2
 					class="transform-[opacity] duration-200 font-bold"
@@ -59,7 +59,7 @@
 						<div
 							onmouseenter={() => onMouseEnter(work)}
 							onmouseleave={() => onMouseLeave(work)}
-							class="transform-[opacity] text-md lg:text-lg duration-200 leading-5"
+							class="transform-[opacity] text-md xl:text-lg duration-200 leading-5"
 							style:opacity="{selectedIndex == -1 || work.index == selectedIndex ? 100 : 50}%"
 							aria-controls="0,1"
 							aria-valuenow="0"
@@ -91,7 +91,7 @@
 		</div>
 	</div>
 
-	<div class="sticky w-[50%] h-[100%] right-0 float-right top-0 hidden lg:flex">
+	<div class="sticky w-[50%] h-[100%] right-0 float-right top-0 hidden xl:flex">
 		<Carousel images={flatImages} {selectedIndex} />
 	</div>
 
