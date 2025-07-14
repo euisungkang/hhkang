@@ -39,7 +39,7 @@
 	style:color={textColor}
 >
 	<div class=" h-full w-[50%] float-left pt-56 pb-32 flex justify-end">
-		<div class="h-full w-2/3 prose prose-dark font-inter max-w-none text-justify">
+		<div class="h-full w-2/3 prose prose-dark font-crimson max-w-none text-justify">
 			{#each Object.entries(works) as [k, v]}
 				<h2
 					class="transform-[opacity] duration-200 font-bold"

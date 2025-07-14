@@ -1,30 +1,19 @@
 <script lang="ts">
-	import gun from '$lib/media/about-gun.webp';
 	import saltpeter from '$lib/media/saltpeter.webp';
 	import TextSlideX from '../effects/TextSlideX.svelte';
-	import TextSlideY from '../effects/TextSlideY.svelte';
 
 	let {
 		overlayColor
 	}: {
 		overlayColor: string;
 	} = $props();
-
-	// const line1: string = 'ASSISTANT PROFESSOR OF EAST ASIAN LANGUAGES & CULTURES';
-	// const line2: string = 'AT WASHINGTON UNIVERSITY IN ST. LOUIS';
-	const line1: string = 'Assistant Professor of East Asian Languages & Cultures';
-	const line2: string = 'at Washington University in St. Louis';
 </script>
 
-<!-- <div class="w-full text-xl flex flex-col font-jws items-center text-[#e6e6e6]"> -->
 <div
 	class="w-full h-full transition-colors duration-1000 ease-out flex items-center justify-center"
 	style:color={overlayColor}
 >
-	<!-- <figure class="absolute left-[15vw] top-[25vh] w-[50vw]"> -->
-	<!-- 	<img src={gun} alt="Choson Gun" class="object-cover" /> -->
-	<!-- </figure> -->
-	<div class="inline-block absolute top-12 right-12 font-inter">
+	<div class="inline-block absolute top-12 right-12 font-crimson text-lg">
 		<TextSlideX text="_1" />
 	</div>
 
@@ -60,13 +49,9 @@
 				</div>
 			</div>
 
-			<!-- <div class="w-[40%] h-10/12 bg-gray-800 text-right"> -->
 			<figure class="w-[40%] h-full pr-12">
 				<img src={saltpeter} alt="Saltpeter" class="object-cover h-full float-right" />
 			</figure>
 		</div>
-		<!-- </div> -->
 	</div>
-	<!-- <TextSlideY text={line1} stagger={false} /> -->
-	<!-- <TextSlideY text={line2} stagger={false} delay={100} /> -->
 </div>

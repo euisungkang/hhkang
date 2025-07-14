@@ -15,7 +15,7 @@
 	onMount(() => {
 		setTimeout(() => {
 			visible = true;
-		}, 2000);
+		}, 1500);
 	});
 </script>
 

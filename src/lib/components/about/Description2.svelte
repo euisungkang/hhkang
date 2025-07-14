@@ -1,5 +1,6 @@
 <script lang="ts">
 	import gun from '$lib/media/about-gun.webp';
+	import TextSlideX from '../effects/TextSlideX.svelte';
 
 	let {
 		overlayColor
@@ -12,6 +13,10 @@
 	class="w-full h-full transition-colors duration-1000 ease-out flex items-center justify-center"
 	style:color={overlayColor}
 >
+	<div class="inline-block absolute top-12 right-12 font-crimson text-lg">
+		<TextSlideX text="_2" />
+	</div>
+
 	<figure class="absolute left-[7.5vw] top-[10vh] w-[85vw]">
 		<img src={gun} alt="Choson Gun" class="object-cover" />
 	</figure>

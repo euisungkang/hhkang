@@ -31,7 +31,7 @@
 	<a aria-label="About" href="/about" rel="noopener noreferrer">
 		<TextSlideY text={'ABOUT'} {delay} />
 	</a>
-	<a aria-label="Gallery" href="/" rel="noopener noreferrer">
+	<a aria-label="Gallery" href="/gallery" rel="noopener noreferrer">
 		<TextSlideY text={'GALLERY'} delay={delay + staggerAmount * 1} />
 	</a>
 	<a aria-label="Teaching" href="/teaching" rel="noopener noreferrer">

@@ -32,6 +32,7 @@
 		lenis = new Lenis({
 			autoRaf: true
 		});
+		lenis.scrollTo(0);
 		lenis.on('scroll', (e: any) => {
 			scrollY = e.animatedScroll;
 			progress = e.progress;
