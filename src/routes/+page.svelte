@@ -21,7 +21,14 @@
 		<source src={bgvideo} type="video/mp4" />
 	</video>
 
-	<video autoplay muted loop id="mobilebg" class="absolute top-0 h-[100%] flex lg:hidden">
+	<video
+		autoplay
+		muted
+		loop
+		id="mobilebg"
+		class="absolute top-0 h-[100%] flex lg:hidden"
+		playsinline
+	>
 		<source src={mobilebg} type="video/mp4" />
 	</video>
 </div>

@@ -14,8 +14,8 @@
 	let load: boolean = $state(false);
 	let selectedIndex: number = $state(-1);
 
-	const textColor: string = '#121212';
-	const backgroundColor: string = '#e6e6e6';
+	const backgroundColor: string = '#121212';
+	const textColor: string = '#e6e6e6';
 
 	function onMouseEnter(work: Work) {
 		selectedIndex = work.index;
@@ -43,7 +43,7 @@
 	<div
 		class=" h-full w-full lg:w-[50%] float-left px-8 lg:px-0 pt-32 lg:pt-56 pb-32 flex justify-end"
 	>
-		<div class="h-full w-full lg:w-2/3 prose prose-light font-crimson max-w-none">
+		<div class="h-full w-full lg:w-2/3 prose prose-dark font-crimson max-w-none">
 			{#each Object.entries(works) as [k, v]}
 				<h2
 					class="transform-[opacity] duration-200 font-bold"
@@ -96,5 +96,5 @@
 	</div>
 
 	<Logo overlayColor={textColor} />
-	<Tabs overlayColor={textColor} {backgroundColor} cutoff={true} />
+	<Tabs overlayColor={textColor} {backgroundColor} cutoff={false} />
 </div>
