@@ -3,9 +3,9 @@
 	import 'lenis/dist/lenis.css';
 	import Snap from 'lenis/snap';
 	import Logo from '$lib/components/overlay/Logo.svelte';
-	import hhkangCutout from '$lib/media/HHKang Cutout w.png';
-	import hhkangBG from '$lib/media/HHKang BG.jpg';
-	import hhkangSteam from '$lib/media/HHKang Steam Cutout.png';
+	import hhkangCutout from '$lib/media/HHKang Cutout.webp';
+	import hhkangBG from '$lib/media/HHKang BG.webp';
+	import hhkangSteam from '$lib/media/HHKang Steam Cutout.webp';
 	import { onMount, onDestroy } from 'svelte';
 	import Tabs from '$lib/components/overlay/Tabs.svelte';
 	import TitleWords from '$lib/components/about/TitleWords.svelte';
