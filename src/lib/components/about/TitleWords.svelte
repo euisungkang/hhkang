@@ -2,13 +2,15 @@
 	import LetterSlide from '../effects/LetterSlide.svelte';
 
 	let {
-		scrollY,
 		lines,
-		load
+		scrollY = 0,
+		load = true,
+		delay = 0
 	}: {
-		scrollY: number;
 		lines: Array<string>;
-		load: boolean;
+		scrollY?: number;
+		load?: boolean;
+		delay?: number;
 	} = $props();
 </script>
 
@@ -28,7 +30,7 @@
 						height={'7.5vw'}
 						size={'10vw'}
 						distance={10}
-						delay={j * 100}
+						delay={delay + j * 100}
 					/>
 				{/each}
 			</div>

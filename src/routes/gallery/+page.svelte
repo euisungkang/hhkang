@@ -8,7 +8,6 @@
 		overlayColor: '#adb5ad',
 		backgroundColor: '#121212'
 	});
-	let selectedIndex: number = $state(-1);
 </script>
 
 <Tabs overlayColor={colorState.overlayColor} />

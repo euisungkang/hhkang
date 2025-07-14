@@ -8,7 +8,7 @@
 	let overlayColor: string = '#e6e6e6';
 </script>
 
-<div class="flex h-screen w-screen items-center justify-center bg-[#121212] bg-black">
+<div class="flex h-screen w-screen items-center justify-center bg-black">
 	<div class="z-10">
 		<Logo {overlayColor} />
 		<Tabs {overlayColor} delay={100} />
