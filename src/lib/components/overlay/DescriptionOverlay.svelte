@@ -3,12 +3,10 @@
 
 	let {
 		overlayColor = '#FFFFFF',
-		delay = 0,
-		invert = false
+		delay = 0
 	}: {
 		overlayColor: string;
 		delay?: number;
-		invert?: boolean;
 	} = $props();
 
 	const line1: string = 'ASSISTANT PROFESSOR OF EAST ASIAN LANGUAGES & CULTURES';

@@ -13,7 +13,7 @@
 	<div class="z-10">
 		<Logo {overlayColor} />
 		<Tabs {overlayColor} backgroundColor={'black'} delay={100} />
-		<DescriptionOverlay {overlayColor} invert={true} delay={500} />
+		<DescriptionOverlay {overlayColor} delay={500} />
 		<VideoCitation {overlayColor} delay={500} />
 	</div>
 

@@ -12,8 +12,10 @@
 	import Description1 from '$lib/components/about/Description1.svelte';
 	import Description2 from '$lib/components/about/Description2.svelte';
 	import Description3 from '$lib/components/about/Description3.svelte';
+	import Loading from '$lib/components/overlay/Loading.svelte';
 
 	const preloadList = [hhkangCutout, hhkangBG, hhkangSteam];
+	let amountLoaded: number = $state(0);
 
 	let visible: boolean = $state(false);
 	let innerHeight: number = $state(0);
@@ -49,6 +51,7 @@
 						img.onload = resolve;
 						img.onerror = reject;
 						img.src = src;
+						amountLoaded++;
 					})
 			)
 		);
@@ -129,5 +132,5 @@
 		{/if}
 	</div>
 {:else}
-	<div class="h-screen w-screen bg-gray-700"></div>
+	<Loading progress={Math.round((amountLoaded / preloadList.length) * 100)} />
 {/if}

@@ -7,6 +7,14 @@
 	let { children } = $props();
 </script>
 
+<link
+	rel="preload"
+	as="font"
+	href="/fonts/tny/TNY.woff2"
+	type="font/woff2"
+	crossorigin="anonymous"
+/>
+
 <div class="hidden lg:flex">
 	{@render children()}
 </div>

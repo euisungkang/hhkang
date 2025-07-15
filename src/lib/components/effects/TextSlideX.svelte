@@ -6,10 +6,12 @@
 	let {
 		text,
 		letterDelay,
+		delay = 0,
 		load = true
 	}: {
 		text: string;
 		letterDelay?: number;
+		delay?: number;
 		load?: boolean;
 	} = $props();
 
@@ -40,7 +42,7 @@
 						axis: 'x',
 						easing: sineOut,
 						duration: 1000,
-						delay: i * (letterDelay ?? 50)
+						delay: i * (letterDelay ?? 50) + delay
 					}}
 					out:slide={{
 						axis: 'x',
