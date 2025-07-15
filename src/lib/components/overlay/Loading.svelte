@@ -5,12 +5,10 @@
 	}: {
 		progress: number;
 	} = $props();
-
-	// $inspect(progress);
 </script>
 
 <div
-	class="h-screen w-screen bg-[#121212] text-[#e6e6e6] font-tny text-5xl
+	class="h-screen w-screen bg-[#121212] text-[#e6e6e6] font-crimson text-3xl
         flex items-start justify-start pl-8 pt-8"
 >
 	<!-- {`${progress}`} -->
