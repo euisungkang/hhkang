@@ -13,10 +13,6 @@
 	class="w-full h-full transition-colors duration-1000 ease-out flex items-center justify-center"
 	style:color={overlayColor}
 >
-	<div class="inline-block absolute top-12 right-12 font-crimson text-lg">
-		<TextSlideX text="_2" />
-	</div>
-
 	<figure class="absolute left-[7.5vw] top-[10vh] w-[85vw] max-h-[83vh] overflow-y-hidden">
 		<img src={gun} alt="Choson Gun" class="object-cover" />
 	</figure>

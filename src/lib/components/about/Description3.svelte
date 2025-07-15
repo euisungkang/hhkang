@@ -14,10 +14,6 @@
 	class="w-full h-full transition-colors duration-1000 ease-out flex items-center justify-center"
 	style:color={overlayColor}
 >
-	<div class="inline-block absolute top-12 right-12 font-crimson text-lg">
-		<TextSlideX text="_3" />
-	</div>
-
 	<video autoplay muted loop id="bgvideo" class="absolute left-[7.5vw] top-[25vh] w-[65vw]">
 		<source src={XZLoop} type="video/mp4" />
 	</video>

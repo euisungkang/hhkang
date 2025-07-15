@@ -13,6 +13,7 @@
 	import Description2 from '$lib/components/about/Description2.svelte';
 	import Description3 from '$lib/components/about/Description3.svelte';
 	import Loading from '$lib/components/overlay/Loading.svelte';
+	import NavUi from '$lib/components/about/NavUI.svelte';
 
 	const preloadList = [hhkangCutout, hhkangBG, hhkangSteam];
 	let amountLoaded: number = $state(0);
@@ -26,21 +27,36 @@
 	let snap: any;
 	let progress: number = $state(0);
 
+	const maxIndex: number = 3;
 	const page1Lines: Array<string> = ['HUMANITIES', 'SCIENCE', 'KOREA'];
+	let page1Load: boolean = $state(false);
+	let page1Content: boolean = $state(false);
 	const page2Lines: Array<string> = ['MATERIAL_DESIGN'];
 	let page2Load: boolean = $state(false);
+	let page2Content: boolean = $state(false);
 	const page3Lines: Array<string> = ['SUNDIALS'];
 	let page3Load: boolean = $state(false);
+	let page3Content: boolean = $state(false);
 
 	$effect(() => {
-		if (scrollY == innerHeight) {
+		if (innerHeight * 0.9 <= scrollY && scrollY <= innerHeight * 0.99) {
+			page1Content = true;
+		} else if (scrollY == innerHeight) {
 			page2Load = true;
-			// snap.add(innerHeight);
+		} else if (innerHeight * 1.9 <= scrollY && scrollY <= innerHeight * 1.99) {
+			page2Content = true;
 		} else if (scrollY == innerHeight * 2) {
 			page3Load = true;
-			// snap.add(innerHeight * 2);
+		} else if (innerHeight * 2.9 <= scrollY && scrollY <= innerHeight * 2.99) {
+			page3Content = true;
+		} else if (scrollY == innerHeight * 3) {
 		}
 	});
+
+	function indexScrollTo(indexTo: number) {
+		if (indexTo > maxIndex || indexTo < 0) return;
+		lenis.scrollTo(indexTo * innerHeight, { lock: true });
+	}
 
 	async function preload(srcs: Array<string>) {
 		await Promise.all(
@@ -70,6 +86,9 @@
 		visible = true;
 		await tick();
 
+		setTimeout(() => {
+			page1Load = true;
+		}, 500);
 		// snap = new Snap(lenis, {
 		// 	type: 'proximity'
 		// });
@@ -109,25 +128,40 @@
 			>
 				<img src={hhkangSteam} alt="HHKang Steam" class="w-full" />
 			</figure>
+			<TitleWords {scrollY} lines={page1Lines} delay={100} load={progress <= 0.05} />
+			<NavUi index={0} dark={true} load={page1Load && progress <= 0.05} scrollTo={indexScrollTo} />
 		</div>
 
-		<TitleWords {scrollY} lines={page1Lines} delay={100} load={progress <= 0.05} />
-
-		<div class="h-screen w-full bg-[#e6e6e6] relative">
+		<div class="h-screen w-full bg-[#e6e6e6] text-[#121212] relative">
 			<Description1 overlayColor={'#121212'} />
+			<NavUi
+				index={1}
+				dark={false}
+				load={page1Content}
+				unload={page2Content}
+				scrollTo={indexScrollTo}
+			/>
 		</div>
 
 		{#if page2Load}
 			<div class="h-screen w-full bg-[#121212] text-[#e6e6e6] relative">
 				<Description2 overlayColor={'#e6e6e6'} />
-				<TitleWords lines={page2Lines} delay={1000} />
+				<TitleWords lines={page2Lines} load={page2Content} />
+				<NavUi
+					index={2}
+					dark={true}
+					load={page2Content}
+					unload={page3Content}
+					scrollTo={indexScrollTo}
+				/>
 			</div>
 		{/if}
 
 		{#if page3Load}
 			<div class="h-screen w-full bg-black text-[#e6e6e6] relative">
 				<Description3 overlayColor={'#e6e6e6'} />
-				<TitleWords lines={page3Lines} delay={1000} />
+				<TitleWords lines={page3Lines} load={page3Content} />
+				<NavUi index={3} dark={true} load={page3Content} unload={true} scrollTo={indexScrollTo} />
 			</div>
 		{/if}
 	</div>

@@ -30,21 +30,21 @@
 		);
 	}
 
-	onMount(() => {
-		// await preload();
+	onMount(async () => {
+		await preload();
 		visible = true;
 		setTimeout(() => {
 			trackVisible = true;
 		}, 300);
-		// await tick();
+		await tick();
 	});
 </script>
 
-<svelte:head>
-	{#each images.slice(0, 8) as image}
-		<link rel="preload" as="image" href={image.image} />
-	{/each}
-</svelte:head>
+<!-- <svelte:head> -->
+<!-- 	{#each images.slice(0, 8) as image} -->
+<!-- 		<link rel="preload" as="image" href={image.image} /> -->
+<!-- 	{/each} -->
+<!-- </svelte:head> -->
 
 {#if visible}
 	<Tabs overlayColor={colorState.overlayColor} />

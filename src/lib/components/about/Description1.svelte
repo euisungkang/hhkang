@@ -13,10 +13,6 @@
 	class="w-full h-full transition-colors duration-1000 ease-out flex items-center justify-center"
 	style:color={overlayColor}
 >
-	<div class="inline-block absolute top-12 right-12 font-crimson text-lg">
-		<TextSlideX text="_1" />
-	</div>
-
 	<div class="w-[70vw] h-[80vh] overflow-hidden">
 		<div
 			class="w-full h-2/12 text-2xl 2xl:text-4xl font-crimson text-justify flex items-center pb-8"
