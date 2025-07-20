@@ -27,7 +27,8 @@
 	let snap: any;
 	let progress: number = $state(0);
 
-	const maxIndex: number = 3;
+	let selectedIndex: number = $state(0);
+	let maxIndex: number = $state(1);
 	const page1Lines: Array<string> = ['HUMANITIES', 'SCIENCE', 'KOREA'];
 	let page1Load: boolean = $state(false);
 	let page1Content: boolean = $state(false);
@@ -39,24 +40,53 @@
 	let page3Content: boolean = $state(false);
 
 	$effect(() => {
-		if (innerHeight * 0.9 <= scrollY && scrollY <= innerHeight * 0.99) {
-			page1Content = true;
-		} else if (scrollY == innerHeight) {
-			page2Load = true;
-		} else if (innerHeight * 1.9 <= scrollY && scrollY <= innerHeight * 1.99) {
-			page2Content = true;
-		} else if (scrollY == innerHeight * 2) {
-			page3Load = true;
-		} else if (innerHeight * 2.9 <= scrollY && scrollY <= innerHeight * 2.99) {
-			page3Content = true;
-		} else if (scrollY == innerHeight * 3) {
+		// Page 0
+		if (0 <= scrollY && scrollY <= innerHeight) {
+			// selectedIndex = 0;
+			if (innerHeight * 0.9 <= scrollY && scrollY <= innerHeight * 0.99) {
+				page1Content = true;
+			} else if (scrollY == innerHeight) {
+				page2Load = true;
+				maxIndex = Math.max(maxIndex, 2);
+			}
+
+			// Page 1
+		} else if (innerHeight < scrollY && scrollY <= innerHeight * 2) {
+			// selectedIndex = 1;
+			if (innerHeight * 1.9 <= scrollY && scrollY <= innerHeight * 1.99) {
+				page2Content = true;
+			} else if (scrollY == innerHeight * 2) {
+				page3Load = true;
+				maxIndex = Math.max(maxIndex, 3);
+			}
+
+			// Page 2
+		} else if (innerHeight * 2 < scrollY && scrollY <= innerHeight * 3) {
+			// selectedIndex = 2;
+			if (innerHeight * 2.9 <= scrollY && scrollY <= innerHeight * 2.99) {
+				page3Content = true;
+			} else if (scrollY == innerHeight * 3) {
+			}
 		}
 	});
 
-	function indexScrollTo(indexTo: number) {
-		if (indexTo > maxIndex || indexTo < 0) return;
+	function indexScrollTo(indexTo: number): boolean {
+		if (indexTo > maxIndex || indexTo < 0) return false;
 		lenis.scrollTo(indexTo * innerHeight, { lock: true });
+		return true;
 	}
+
+	function handleKeydown(e: KeyboardEvent) {
+		if (e.key === 'ArrowUp' && selectedIndex > 0) {
+			e.preventDefault();
+			if (indexScrollTo(selectedIndex - 1)) selectedIndex--;
+		} else if (e.key === 'ArrowDown' && selectedIndex < maxIndex) {
+			e.preventDefault();
+			if (indexScrollTo(selectedIndex + 1)) selectedIndex++;
+		}
+	}
+
+	// $inspect(selectedIndex);
 
 	async function preload(srcs: Array<string>) {
 		await Promise.all(
@@ -100,7 +130,7 @@
 	});
 </script>
 
-<svelte:window bind:innerHeight />
+<svelte:window on:keydown={handleKeydown} bind:innerHeight />
 
 {#if visible}
 	<Logo overlayColor={textColor} sticky={true} {scrollY} />

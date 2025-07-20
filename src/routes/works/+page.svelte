@@ -4,8 +4,6 @@
 	import type { Work } from '$lib/constants/works';
 	import { works } from '$lib/constants/works';
 	import { onMount } from 'svelte';
-	import { fade, fly } from 'svelte/transition';
-	import { sineInOut, sineOut } from 'svelte/easing';
 	import Carousel from '$lib/components/works/Carousel.svelte';
 	import TextSlideY from '$lib/components/effects/TextSlideY.svelte';
 

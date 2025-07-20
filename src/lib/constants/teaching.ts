@@ -2,7 +2,7 @@ import imaginedpasts from '$lib/media/imaginedpasts.webp';
 import kitchenstudio from '$lib/media/kitchenstudio.webp';
 import material from '$lib/media/material.webp';
 import kciv from '$lib/media/kciv.webp';
-import stem from '$lib/media/stem.png';
+import stem from '$lib/media/stem.webp';
 
 export type Image = {
   image: string,
