@@ -79,7 +79,7 @@
 				opacity: 1
 			}}
 		>
-			{text}
+			{@html text}
 		</div>
 	{/if}
 </div>
