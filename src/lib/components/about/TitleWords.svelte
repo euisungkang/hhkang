@@ -5,12 +5,14 @@
 		lines,
 		scrollY = 0,
 		load = true,
-		delay = 0
+		delay = 0,
+		size = '10vw'
 	}: {
 		lines: Array<string>;
 		scrollY?: number;
 		load?: boolean;
 		delay?: number;
+		size?: string;
 	} = $props();
 </script>
 
@@ -28,7 +30,7 @@
 						reverse={false}
 						{load}
 						height={'7.5vw'}
-						size={'10vw'}
+						{size}
 						distance={10}
 						delay={delay + j * 100}
 					/>
