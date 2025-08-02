@@ -21,17 +21,14 @@
 		<!-- 	the history of science, the history of technology, and global material culture. -->
 		<!-- </div> -->
 		<div class="w-full h-12/12 flex">
-			<div class="w-[50%] h-full text-base 2xl:text-[1.3rem] flex items-start font-crimson">
-				Professor Hyeok Hweon “H. H.” Kang grew up in Guatemala City, Guatemala. After graduating
-				from Emory University, with a double major in music and history, he studied at Harvard
-				University, where he received his Ph.D. in History and East Asian Languages. He is currently
-				Assistant Professor of East Asian Languages and Cultures at Washington University in St.
-				Louis. In 2023–24, he was an American Council of Learned Societies Fellow, and in 2020–21, a
-				D. Kim Foundation Fellow at the Department of the History of Science and Technology, Johns
-				Hopkins University. Currently, he is Affiliated Assistant Professor of Comparative
-				Literature and Thought and Faculty Affiliate at Center for the Study of Race, Ethnicity &
-				Equity at WashU. He co-chairs the Forum for the History of Science in Asia at the History of
-				Science Society.
+			<div class="w-[50%] h-full text-base 2xl:text-[1.3rem] flex items-start font-crimson pr-2">
+				Professor Hyeok Hweon “H. H.” Kang grew up in Guatemala City, Guatemala. After studying at
+				Harvard University, where he received his Ph.D. in History and East Asian Languages, he
+				joined the WashU faculty in 2021 as Assistant Professor of East Asian Languages and
+				Cultures. In 2023–24, he received an American Council of Learned Societies Fellowship. In
+				2020–21, he was a D. Kim Foundation Postdoctoral Fellow at the Department of the History of
+				Science and Technology, Johns Hopkins University. He co-chairs the Forum for the History of
+				Science in Asia at the History of Science Society.
 				<br /><br />
 				Kang is currently completing his first book, Artisanal Heart: Korea, Confucian Statecraft, and
 				the Sciences of Making (under contract with The University of Chicago Press), which examines
@@ -44,8 +41,8 @@
 				Kang’s research focuses on the intellectual and cultural history of Korea in the Chosŏn (1391–1910)
 				period. He is particularly interested in how socially marginalized people, like artisans and
 				practitioners, investigated the natural world around them, made useful things, and shaped literati
-				learning and political institutions. He has also published on digital humanities, global history,
-				military history, and music.
+				learning and political institutions. He has also published on the history of science, military
+				history, and global history.
 			</div>
 
 			<figure class="w-[50%] h-full pr-12">
