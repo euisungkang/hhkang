@@ -18,27 +18,21 @@
 		<source src={XZLoop} type="video/mp4" />
 	</video>
 
-	<!-- <figure class="absolute left-[75vw] top-[55vh] h-[45vh] rotate-90"> -->
-	<!-- 	<img src={sundial} alt="Sundial" class="object-cover h-full" /> -->
-	<!-- </figure> -->
-
 	<div
-		class="absolute left-[65vw] top-[35vh] w-[45ch] text-justify font-crimson text-base 2xl:text-[1.3rem] text-[#e6e6e6] mix-blend-difference"
+		class="absolute left-[65vw] top-[35vh] w-[45ch] text-justify font-crimson text-base 2xl:text-[1.3rem] text-[#e6e6e6] mix-blend-difference prose prose-dark"
 	>
-		Kang has wide-ranging interests in digital humanities. His DH projects include a network
-		analysis of international criminals in seventeenth-century Nagasaki, published in the Journal of
-		Cultural Analytics. He also works with imaging scientists, designers, and precision metalworkers
-		to critically “rework” historical material culture, which has included disassembling and CT
-		scanning artifacts, mocking up mechanical drawings in 3D, and fabricating prototypes for
-		testing.
-
-		<!-- His research has also appeared (or is forthcoming) in the fields of ethnomusicology, diplomatic -->
-		<!-- history, and global military history, in venues such as Routledge Handbook of Asian Music, -->
-		<!-- Journal of World History, The Military Revolution and Revolutions in Military Affairs, and The -->
-		<!-- Journal of Asian Studies. -->
-		<!-- <br /><br /> -->
-		<!-- Prior to joining the WashU faculty in 2021, he was a D. Kim Postdoctoral Fellow in the Department -->
-		<!-- of the History of Science and Technology, Johns Hopkins University. He received his Ph.D. in History -->
-		<!-- and East Asian Languages from Harvard University. -->
+		Professor Kang has wide-ranging interests in digital humanities and material culture studies.
+		His projects include a network analysis of international criminals in seventeenth-century
+		Nagasaki, published in the
+		<a
+			href="https://culturalanalytics.org/article/68188-how-network-analysis-uncovers-international-networks-of-smuggling-history-criminals-in-nagasaki-japan-circa-1667"
+			target="_blank"
+		>
+			<i>Journal of Cultural Analytics</i>
+		</a>
+		. He also collaborates with imaging scientists, game designers, and mechanical engineers to critically
+		“rework” historical material culture. This work spans CT scanning of artifacts, 3D modeling of artisanal
+		drawings, and prototype fabrication for experimental testing—applied across a diverse array of objects
+		such as sundials, water pumps, and steam engines.
 	</div>
 </div>
