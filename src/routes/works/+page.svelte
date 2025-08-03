@@ -16,7 +16,7 @@
 	const textColor: string = '#e6e6e6';
 
 	function onMouseEnter(work: Work) {
-		selectedIndex = work.index;
+		selectedIndex = work.index >= 15 ? -1 : work.index;
 	}
 
 	function onMouseLeave(work: Work) {
@@ -26,6 +26,7 @@
 	onMount(() => {
 		flatImages = Object.values(works)
 			.flat()
+			.slice(0, 15)
 			.map(({ index, image }) => ({ index, image }));
 		setTimeout(() => {
 			load = true;
@@ -77,7 +78,10 @@
 				</div>
 			{/each}
 			<div class="pt-10 underline text-2xl">
-				<a href="sample" download>
+				<a
+					href="https://drive.google.com/file/d/1pHn_A6rkDc4yejp-LZwo4VVzvHuWYaBA/view?usp=sharing"
+					target="_blank"
+				>
 					<TextSlideY
 						text={'Full CV'}
 						distance={'4rem'}

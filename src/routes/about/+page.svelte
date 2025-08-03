@@ -183,7 +183,13 @@
 			<div class="h-screen w-full bg-black text-[#e6e6e6] relative">
 				<Description3 overlayColor={'#e6e6e6'} />
 				<TitleWords lines={page3Lines} load={page2Content} size={'9vw'} />
-				<NavUi index={3} dark={true} load={page2Content} unload={true} scrollTo={indexScrollTo} />
+				<NavUi
+					index={2}
+					dark={true}
+					load={page2Content}
+					unload={page3Content}
+					scrollTo={indexScrollTo}
+				/>
 			</div>
 		{/if}
 
@@ -191,13 +197,7 @@
 			<div class="h-screen w-full bg-[#121212] text-[#e6e6e6] relative">
 				<Description2 overlayColor={'#e6e6e6'} />
 				<TitleWords lines={page2Lines} load={page3Content} />
-				<NavUi
-					index={2}
-					dark={true}
-					load={page3Content}
-					unload={page3Content}
-					scrollTo={indexScrollTo}
-				/>
+				<NavUi index={3} dark={true} load={page3Content} unload={true} scrollTo={indexScrollTo} />
 			</div>
 		{/if}
 	</div>
