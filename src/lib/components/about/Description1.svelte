@@ -14,12 +14,6 @@
 	style:color={overlayColor}
 >
 	<div class="w-[70vw] h-[90vh] overflow-hidden pt-20">
-		<!-- <div -->
-		<!-- 	class="w-full h-2/12 text-2xl 2xl:text-4xl font-crimson text-justify flex items-center pb-8" -->
-		<!-- > -->
-		<!-- 	Professor Kang is a historian of early modern Korea, with research and teaching interests in -->
-		<!-- 	the history of science, the history of technology, and global material culture. -->
-		<!-- </div> -->
 		<div class="w-full h-12/12 flex">
 			<div
 				class="w-[50%] h-full text-base 2xl:text-[1.3rem] flex items-start font-crimson pr-2 prose prose-light"

@@ -19,7 +19,7 @@
 	</video>
 
 	<div
-		class="absolute left-[65vw] top-[35vh] w-[45ch] text-justify font-crimson text-base 2xl:text-[1.3rem] text-[#e6e6e6] mix-blend-difference prose prose-dark"
+		class="absolute left-[65vw] top-[35vh] w-[45ch] font-crimson text-base 2xl:text-[1.3rem] text-[#e6e6e6] mix-blend-difference prose prose-dark"
 	>
 		Professor Kang has wide-ranging interests in digital humanities and material culture studies.
 		His projects include a network analysis of international criminals in seventeenth-century

@@ -18,7 +18,7 @@
 
 <div
 	class="absolute flex flex-col items-start justify-start top-0 left-0 mix-blend-difference z-10
-        leading-[7.5vw] overflow-hidden font-baskervville text-[#e6e6e6] w-full h-full"
+        leading-[7.5vw] overflow-hidden font-baskervville text-[#e6e6e6] w-full h-full select-none pointer-events-none"
 	style="transform: translateY({scrollY}px);"
 >
 	<div class="relative w-full h-screen flex flex-col">

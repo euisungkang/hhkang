@@ -38,7 +38,7 @@
 	const page1Lines: Array<string> = ['HUMANITIES', 'SCIENCE', 'KOREA'];
 	let page1Load: boolean = $state(false);
 	let page1Content: boolean = $state(false);
-	const page2Lines: Array<string> = ['MATERIAL_DESIGN'];
+	const page2Lines: Array<string> = ['MATERIAL_CULTURE'];
 	let page2Load: boolean = $state(false);
 	let page2Content: boolean = $state(false);
 	const page3Lines: Array<string> = ['DIGITAL_HUMANITIES'];
@@ -151,12 +151,12 @@
 				<img src={hhkangBG} alt="HHKang BG" class="object-cover w-full" />
 			</figure>
 
-			<figure
-				class="absolute -bottom-[16vh] left-0 w-full"
-				style="transform: translateY({scrollY * 0.2}px);"
-			>
-				<img src={hhkangCutout} alt="HHKang Cutout" class="w-full" />
-			</figure>
+			<!-- <figure -->
+			<!-- 	class="absolute -bottom-[16vh] left-0 w-full" -->
+			<!-- 	style="transform: translateY({scrollY * 0.2}px);" -->
+			<!-- > -->
+			<!-- 	<img src={hhkangCutout} alt="HHKang Cutout" class="w-full" /> -->
+			<!-- </figure> -->
 
 			<figure
 				class="absolute -bottom-[16vh] right-0 w-full"
