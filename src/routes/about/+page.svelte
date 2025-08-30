@@ -151,12 +151,12 @@
 				<img src={hhkangBG} alt="HHKang BG" class="object-cover w-full" />
 			</figure>
 
-			<!-- <figure -->
-			<!-- 	class="absolute -bottom-[16vh] left-0 w-full" -->
-			<!-- 	style="transform: translateY({scrollY * 0.2}px);" -->
-			<!-- > -->
-			<!-- 	<img src={hhkangCutout} alt="HHKang Cutout" class="w-full" /> -->
-			<!-- </figure> -->
+			<figure
+				class="absolute -bottom-[16vh] left-0 w-full"
+				style="transform: translateY({scrollY * 0.2}px);"
+			>
+				<img src={hhkangCutout} alt="HHKang Cutout" class="w-full" />
+			</figure>
 
 			<figure
 				class="absolute -bottom-[16vh] right-0 w-full"
