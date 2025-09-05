@@ -1,10 +1,13 @@
 <script lang="ts">
+	import Lenis from 'lenis';
+	import 'lenis/dist/lenis.css';
 	import Card from '$lib/components/gallery/Card.svelte';
 	import Loading from '$lib/components/overlay/Loading.svelte';
 	import Logo from '$lib/components/overlay/Logo.svelte';
 	import Tabs from '$lib/components/overlay/Tabs.svelte';
 	import { images } from '$lib/constants/gallery';
-	import { onMount, tick } from 'svelte';
+	import { onDestroy, onMount, tick } from 'svelte';
+	import kciv from '$lib/media/kciv.webp';
 
 	let colorState = $state({
 		overlayColor: '#adb5ad',
@@ -13,37 +16,65 @@
 
 	let visible: boolean = $state(false);
 	let trackVisible: boolean = $state(false);
+	let innerHeight: number = $state(0);
+	let scrollY = $state(0);
+	let lenis: any;
+	let progress: number = $state(0);
 
-	async function preload() {
-		await Promise.all(
-			images.slice(0, 8).map(
-				(image) =>
-					new Promise((resolve, reject) => {
-						const img = new Image();
-						img.onload = resolve;
-						img.onerror = reject;
-						img.src = image.image;
-					})
-			)
-		);
-	}
+	let cutoff: number = $state(12);
+
+	$effect(() => {
+		// if (scrollY % innerHeight >= 0.5 * innerHeight) cutoff += 12;
+		// if (progress >= 0.75) cutoff += 12;
+	});
+
+	// async function preload() {
+	// 	await Promise.all(
+	// 		images.slice(0, 8).map(
+	// 			(image) =>
+	// 				new Promise((resolve, reject) => {
+	// 					const img = new Image();
+	// 					img.onload = resolve;
+	// 					img.onerror = reject;
+	// 					img.src = image.image;
+	// 				})
+	// 		)
+	// 	);
+	// }
 
 	onMount(async () => {
-		await preload();
+		window.scrollTo(0, 0);
+		lenis = new Lenis({
+			autoRaf: true
+		});
+		lenis.on('scroll', (e: any) => {
+			scrollY = e.animatedScroll;
+			progress = e.progress;
+		});
 		visible = true;
+		await tick();
+
 		setTimeout(() => {
 			trackVisible = true;
 		}, 300);
-		await tick();
+	});
+
+	$inspect(scrollY, progress);
+
+	onDestroy(() => {
+		if (lenis) lenis.destroy();
 	});
 </script>
+
+<svelte:window bind:innerHeight />
 
 {#if visible}
 	<Tabs overlayColor={colorState.overlayColor} />
 	<Logo overlayColor={colorState.overlayColor} />
 
 	<div
-		class="dark h-screen w-screen overflow-x-hidden overflow-y-scroll transition-colors
+		data-scroll-container
+		class="dark min-h-screen w-screen overflow-x-hidden transition-colors
             duration-1000 ease-out text-crimson py-48 px-8 scrollbar-hidden"
 		style:background-color={colorState.backgroundColor}
 		style:color={colorState.overlayColor}
@@ -53,8 +84,9 @@
 		          xl:grid-cols-4 gap-y-32 gap-x-4"
 		>
 			{#each images as image, i}
-				{#if trackVisible}
-					<Card index={i} {image} />
+				{#if trackVisible && i < cutoff}
+					<!-- <Card index={i} {image} /> -->
+					<Card index={i} image={{ image: kciv, caption: image.caption }} />
 				{/if}
 			{/each}
 		</div>

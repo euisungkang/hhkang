@@ -1,17 +1,16 @@
 <script lang="ts">
 	import Lenis from 'lenis';
 	import 'lenis/dist/lenis.css';
-	import Snap from 'lenis/snap';
 	import Logo from '$lib/components/overlay/Logo.svelte';
-	const hhkangBG: string =
-		'https://ik.imagekit.io/easton/hhkang/images/HHKang%20BG.webp?updatedAt=1754094500655';
-	const hhkangCutout: string =
-		'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Cutout.webp?updatedAt=1754094499447';
-	const hhkangSteam: string =
-		'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Steam%20Cutout.webp?updatedAt=1754094498589';
-	// import hhkangCutout from '$lib/media/HHKang Cutout.webp';
-	// import hhkangBG from '$lib/media/HHKang BG.webp';
-	// import hhkangSteam from '$lib/media/HHKang Steam Cutout.webp';
+	// const hhkangBG: string =
+	// 	'https://ik.imagekit.io/easton/hhkang/images/HHKang%20BG.webp?updatedAt=1754094500655';
+	// const hhkangCutout: string =
+	// 	'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Cutout.webp?updatedAt=1754094499447';
+	// const hhkangSteam: string =
+	// 	'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Steam%20Cutout.webp?updatedAt=1754094498589';
+	import hhkangCutout from '$lib/media/HHKang Cutout.webp';
+	import hhkangBG from '$lib/media/HHKang BG.webp';
+	import hhkangSteam from '$lib/media/HHKang Steam Cutout.webp';
 	import { onMount, onDestroy, tick } from 'svelte';
 	import Tabs from '$lib/components/overlay/Tabs.svelte';
 	import TitleWords from '$lib/components/about/TitleWords.svelte';
@@ -20,6 +19,8 @@
 	import Description3 from '$lib/components/about/Description3.svelte';
 	import Loading from '$lib/components/overlay/Loading.svelte';
 	import NavUi from '$lib/components/about/NavUI.svelte';
+	import TextSlideY from '$lib/components/effects/TextSlideY.svelte';
+	import Footer from '$lib/components/overlay/Footer.svelte';
 
 	const preloadList = [hhkangCutout, hhkangBG, hhkangSteam];
 	let amountLoaded: number = $state(0);
@@ -44,6 +45,8 @@
 	const page3Lines: Array<string> = ['DIGITAL_HUMANITIES'];
 	let page3Load: boolean = $state(false);
 	let page3Content: boolean = $state(false);
+	let page4Load: boolean = $state(false);
+	let page4Content: boolean = $state(false);
 
 	$effect(() => {
 		// Page 0
@@ -72,6 +75,12 @@
 			if (innerHeight * 2.9 <= scrollY && scrollY <= innerHeight * 2.99) {
 				page3Content = true;
 			} else if (scrollY == innerHeight * 3) {
+				page4Load = true;
+				maxIndex = Math.max(maxIndex, 4);
+			}
+		} else if (innerHeight * 3 < scrollY && scrollY <= innerHeight * 4) {
+			if (innerHeight * 3.1 <= scrollY && scrollY <= innerHeight * 3.99) {
+				page4Content = true;
 			}
 		}
 	});
@@ -91,8 +100,6 @@
 			if (indexScrollTo(selectedIndex + 1)) selectedIndex++;
 		}
 	}
-
-	// $inspect(selectedIndex);
 
 	async function preload(srcs: Array<string>) {
 		await Promise.all(
@@ -125,10 +132,9 @@
 		setTimeout(() => {
 			page1Load = true;
 		}, 500);
-		// snap = new Snap(lenis, {
-		// 	type: 'proximity'
-		// });
 	});
+
+	$inspect(scrollY);
 
 	onDestroy(() => {
 		if (lenis) lenis.destroy();
@@ -198,6 +204,12 @@
 				<Description2 overlayColor={'#e6e6e6'} />
 				<TitleWords lines={page2Lines} load={page3Content} />
 				<NavUi index={3} dark={true} load={page3Content} unload={true} scrollTo={indexScrollTo} />
+			</div>
+		{/if}
+
+		{#if page4Load}
+			<div class="h-96 w-full">
+				<Footer load={page4Content} />
 			</div>
 		{/if}
 	</div>
