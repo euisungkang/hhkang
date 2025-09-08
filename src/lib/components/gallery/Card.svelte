@@ -20,7 +20,7 @@
 		y: '100vh',
 		duration: 1000,
 		opacity: 1,
-		delay: 100 * index,
+		delay: 100 * (index % 12),
 		easing: sineOut
 	}}
 >

@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import Carousel from '$lib/components/works/Carousel.svelte';
 	import TextSlideY from '$lib/components/effects/TextSlideY.svelte';
+	import Footer from '$lib/components/overlay/Footer.svelte';
 
 	let flatImages: Array<{ index: number; image: string }> = $state([]);
 
@@ -39,6 +40,7 @@
 	style:background-color={backgroundColor}
 	style:color={textColor}
 >
+	<!-- <div class="flex w-full items-center h-full justify-center"> -->
 	<div
 		class=" h-full w-full xl:w-[50%] float-left px-8 xl:px-0 pt-32 xl:pt-56 pb-32 flex justify-end"
 	>
@@ -96,6 +98,11 @@
 	<div class="sticky w-[50%] h-[100%] right-0 float-right top-0 hidden xl:flex">
 		<Carousel images={flatImages} {selectedIndex} />
 	</div>
+	<!-- </div> -->
+
+	<!-- <div class="absolute bottom-0 w-full h-96"> -->
+	<!-- 	<Footer load={true} /> -->
+	<!-- </div> -->
 
 	<Logo overlayColor={textColor} />
 	<Tabs overlayColor={textColor} {backgroundColor} cutoff={false} />

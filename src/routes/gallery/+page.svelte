@@ -7,7 +7,6 @@
 	import Tabs from '$lib/components/overlay/Tabs.svelte';
 	import { images } from '$lib/constants/gallery';
 	import { onDestroy, onMount, tick } from 'svelte';
-	import kciv from '$lib/media/kciv.webp';
 
 	let colorState = $state({
 		overlayColor: '#adb5ad',
@@ -23,34 +22,29 @@
 
 	let cutoff: number = $state(12);
 
-	$effect(() => {
-		// if (scrollY % innerHeight >= 0.5 * innerHeight) cutoff += 12;
-		// if (progress >= 0.75) cutoff += 12;
-	});
-
-	// async function preload() {
-	// 	await Promise.all(
-	// 		images.slice(0, 8).map(
-	// 			(image) =>
-	// 				new Promise((resolve, reject) => {
-	// 					const img = new Image();
-	// 					img.onload = resolve;
-	// 					img.onerror = reject;
-	// 					img.src = image.image;
-	// 				})
-	// 		)
-	// 	);
-	// }
+	function loadMoreImages() {
+		cutoff += 12;
+	}
 
 	onMount(async () => {
 		window.scrollTo(0, 0);
 		lenis = new Lenis({
 			autoRaf: true
 		});
+
 		lenis.on('scroll', (e: any) => {
 			scrollY = e.animatedScroll;
 			progress = e.progress;
+
+			const scrollTop = e.animatedScroll;
+			const scrollHeight = document.documentElement.scrollHeight;
+			const buffer = innerHeight * 0.95;
+
+			if (scrollTop + innerHeight >= scrollHeight - buffer) {
+				loadMoreImages();
+			}
 		});
+
 		visible = true;
 		await tick();
 
@@ -59,7 +53,7 @@
 		}, 300);
 	});
 
-	$inspect(scrollY, progress);
+	// $inspect(scrollY, progress, innerHeight, cutoff);
 
 	onDestroy(() => {
 		if (lenis) lenis.destroy();
@@ -74,7 +68,7 @@
 
 	<div
 		data-scroll-container
-		class="dark min-h-screen w-screen overflow-x-hidden transition-colors
+		class="dark min-h-screen w-screen overflow-x-hidden transition-colors max-w-[100%]
             duration-1000 ease-out text-crimson py-48 px-8 scrollbar-hidden"
 		style:background-color={colorState.backgroundColor}
 		style:color={colorState.overlayColor}
@@ -85,8 +79,7 @@
 		>
 			{#each images as image, i}
 				{#if trackVisible && i < cutoff}
-					<!-- <Card index={i} {image} /> -->
-					<Card index={i} image={{ image: kciv, caption: image.caption }} />
+					<Card index={i} {image} />
 				{/if}
 			{/each}
 		</div>
