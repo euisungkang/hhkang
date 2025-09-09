@@ -25,7 +25,7 @@
 					Assistant Professor of
 					<a href="https://ealc.wustl.edu/" target="_blank"> East Asian Languages and Cultures</a>.
 					<br /><br />
-					Kang’s first book, <i>Artisanal Heart: Statecraft and Technology in Early Modern Korea</i>
+					Kang’s first book, <i>Artisanal Heart: State, Craft, and Science in Early Modern Korea</i>
 					(under contract with the University of Chicago Press), examines how the Chosŏn (1392–1910)
 					state supported its artisans and “ingeniators,” fostering a vibrant culture of mechanical scholarship
 					and material production. His research on this subject has received international awards including

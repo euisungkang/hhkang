@@ -6,7 +6,6 @@
 	import { onMount } from 'svelte';
 	import Carousel from '$lib/components/works/Carousel.svelte';
 	import TextSlideY from '$lib/components/effects/TextSlideY.svelte';
-	import Footer from '$lib/components/overlay/Footer.svelte';
 
 	let flatImages: Array<{ index: number; image: string }> = $state([]);
 
@@ -36,13 +35,13 @@
 </script>
 
 <div
-	class="absolute left-0 top-0 min-h-screen h-auto flex justify-center w-[100%] overflow-x-clip"
+	class="flex-col xl:flex-row xl:absolute left-0 top-0 min-h-screen h-auto
+        flex justify-center w-[100%] overflow-x-clip"
 	style:background-color={backgroundColor}
 	style:color={textColor}
 >
-	<!-- <div class="flex w-full items-center h-full justify-center"> -->
 	<div
-		class=" h-full w-full xl:w-[50%] float-left px-8 xl:px-0 pt-32 xl:pt-56 pb-32 flex justify-end"
+		class=" h-full w-full xl:w-[50%] float-left px-8 xl:px-0 pt-32 xl:pt-56 pb-16 xl:pb-32 flex justify-end"
 	>
 		<div class="h-full w-full xl:w-3/4 2xl:w-2/3 prose prose-dark font-crimson max-w-none">
 			{#each Object.entries(works) as [k, v]}
@@ -98,11 +97,6 @@
 	<div class="sticky w-[50%] h-[100%] right-0 float-right top-0 hidden xl:flex">
 		<Carousel images={flatImages} {selectedIndex} />
 	</div>
-	<!-- </div> -->
-
-	<!-- <div class="absolute bottom-0 w-full h-96"> -->
-	<!-- 	<Footer load={true} /> -->
-	<!-- </div> -->
 
 	<Logo overlayColor={textColor} />
 	<Tabs overlayColor={textColor} {backgroundColor} cutoff={false} />

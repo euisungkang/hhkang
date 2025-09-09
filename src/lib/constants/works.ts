@@ -19,7 +19,7 @@ const rand = () => imgs[Math.floor(Math.random() * imgs.length)];
 export const works: Works = {
   'MONOGRAPH': [
     {
-      citation: '<i>Artisanal Heart: Statecraft and Technology in Early Modern Korea</i> (under contract with The University of Chicago Press)',
+      citation: '<i>Artisanal Heart: State, Craft, and Science in Early Modern Korea</i> (under contract with The University of Chicago Press)',
       image: 'https://ik.imagekit.io/easton/hhkang/images/works/Monograph,%20Artisanal%20Heart.webp?updatedAt=1754240751365',
       index: 0,
     },

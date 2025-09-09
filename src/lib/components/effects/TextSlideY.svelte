@@ -43,7 +43,7 @@
 						y: distance,
 						easing: sineOut,
 						duration: duration,
-						delay: i * letterDelay,
+						delay: i * letterDelay + delay,
 						opacity: 1
 					}}
 					out:fly={{

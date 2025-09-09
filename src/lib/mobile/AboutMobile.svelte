@@ -15,12 +15,12 @@
 <Tabs overlayColor={textColor} {backgroundColor} />
 
 <div
-	class="dark min-h-screen w-screen flex flex-col font-crimson
+	class="min-h-screen w-full flex flex-col font-crimson
         space-y-8 px-8 pb-12 pt-32 prose prose-light"
 	style:background-color={backgroundColor}
 	style:color={textColor}
 >
-	<div class="text-xl">
+	<div class="text-md">
 		Professor Hyeok Hweon “H. H.” Kang grew up in Guatemala City, Guatemala. He received his B.A.
 		from Emory University and Ph.D. in History and East Asian Languages from Harvard University. A
 		historian of early modern Korea, he joined the WashU faculty in 2021 as Assistant Professor of
@@ -28,7 +28,7 @@
 	</div>
 
 	<div class="text-md">
-		Kang’s first book, <i>Artisanal Heart: Statecraft and Technology in Early Modern Korea</i>
+		Kang’s first book, <i>Artisanal Heart: State, Craft, and Science in Early Modern Korea</i>
 		(under contract with the University of Chicago Press), examines how the Chosŏn (1392–1910) state
 		supported its artisans and “ingeniators,” fostering a vibrant culture of mechanical scholarship and
 		material production. His research on this subject has received international awards including the

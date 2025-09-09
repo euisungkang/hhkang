@@ -1,18 +1,14 @@
 <script lang="ts">
-	import Footer from '$lib/components/overlay/Footer.svelte';
 	import '../../app.css';
+	import Footer from '$lib/components/overlay/Footer.svelte';
 
 	let { children } = $props();
 </script>
 
-<div class="hidden xl:flex">
-	{@render children()}
-</div>
-
-<div class="xl:hidden flex flex-col">
+<div class="flex flex-col">
 	{@render children()}
 
-	<div class="h-56 w-full">
+	<div class="h-56 xl:h-96 w-full">
 		<Footer load={true} bg={'#121212'} text={'#e6e6e6'} dark={true} />
 	</div>
 </div>
