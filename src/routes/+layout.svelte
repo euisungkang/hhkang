@@ -6,6 +6,8 @@
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
 
 	let { children } = $props();
+
+	console.log('<Developed by Easton Kang>\nFullstack | Motion Engineer\nhttps://eastonkang.com');
 </script>
 
 <link

@@ -53,8 +53,6 @@
 		}, 300);
 	});
 
-	// $inspect(scrollY, progress, innerHeight, cutoff);
-
 	onDestroy(() => {
 		if (lenis) lenis.destroy();
 	});

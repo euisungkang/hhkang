@@ -2,15 +2,15 @@
 	import Lenis from 'lenis';
 	import 'lenis/dist/lenis.css';
 	import Logo from '$lib/components/overlay/Logo.svelte';
-	// const hhkangBG: string =
-	// 	'https://ik.imagekit.io/easton/hhkang/images/HHKang%20BG.webp?updatedAt=1754094500655';
-	// const hhkangCutout: string =
-	// 	'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Cutout.webp?updatedAt=1754094499447';
-	// const hhkangSteam: string =
-	// 	'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Steam%20Cutout.webp?updatedAt=1754094498589';
-	import hhkangCutout from '$lib/media/HHKang Cutout.webp';
-	import hhkangBG from '$lib/media/HHKang BG.webp';
-	import hhkangSteam from '$lib/media/HHKang Steam Cutout.webp';
+	const hhkangBG: string =
+		'https://ik.imagekit.io/easton/hhkang/images/HHKang%20BG.webp?updatedAt=1754094500655';
+	const hhkangCutout: string =
+		'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Cutout.webp?updatedAt=1754094499447';
+	const hhkangSteam: string =
+		'https://ik.imagekit.io/easton/hhkang/images/HHKang%20Steam%20Cutout.webp?updatedAt=1754094498589';
+	// import hhkangCutout from '$lib/media/HHKang Cutout.webp';
+	// import hhkangBG from '$lib/media/HHKang BG.webp';
+	// import hhkangSteam from '$lib/media/HHKang Steam Cutout.webp';
 	import { onMount, onDestroy, tick } from 'svelte';
 	import Tabs from '$lib/components/overlay/Tabs.svelte';
 	import TitleWords from '$lib/components/about/TitleWords.svelte';
@@ -133,8 +133,6 @@
 			page1Load = true;
 		}, 500);
 	});
-
-	$inspect(scrollY);
 
 	onDestroy(() => {
 		if (lenis) lenis.destroy();

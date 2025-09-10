@@ -86,7 +86,6 @@
 		if (e.key === 'ArrowLeft' && selectedIndex > 0) expandImage(selectedIndex - 1);
 		else if (e.key === 'ArrowRight' && selectedIndex < images.length - 1)
 			expandImage(selectedIndex + 1);
-		console.log(selectedIndex);
 	}
 
 	let amountLoaded: number = $state(0);
