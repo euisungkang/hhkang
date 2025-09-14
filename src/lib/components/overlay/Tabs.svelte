@@ -6,7 +6,7 @@
 	import TextSlideX from '../effects/TextSlideX.svelte';
 
 	let {
-		overlayColor = '#e6e6e6',
+		overlayColor = '#aeb4ae',
 		backgroundColor = '#121212',
 		cutoff = false,
 		delay = 0,

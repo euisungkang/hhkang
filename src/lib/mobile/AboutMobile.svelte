@@ -11,7 +11,7 @@
 	} = $props();
 </script>
 
-<Logo overlayColor={textColor} sticky={true} />
+<Logo overlayColor={textColor} sticky={false} />
 <Tabs overlayColor={textColor} {backgroundColor} />
 
 <div

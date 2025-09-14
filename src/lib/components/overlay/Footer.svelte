@@ -4,7 +4,7 @@
 	let {
 		load = true,
 		bg = '#121212',
-		text = '#e6e6e6',
+		text = '#aeb4ae',
 		dark = true
 	}: {
 		load: boolean;
@@ -43,35 +43,34 @@
 							<TextSlideY text={'HHKANG@WUSTL.EDU'} stagger={true} letterDelay={10} delay={100} />
 						</a>
 					</div>
-					<div>
-						<TextSlideY text={'BUSCH HALL 220'} stagger={true} letterDelay={10} delay={150} />
-					</div>
 					<div>&nbsp;</div>
 					<div>&nbsp;</div>
-				</div>
-			</div>
-			<div
-				class="font-jws text-xs lg:text-sm w-1/2 md:w-1/3 h-full flex items-center justify-center"
-			>
-				<div class="flex flex-col items-start justify-center">
-					<div class="text-sm md:text-md lg:text-lg mb-4">
-						<TextSlideY
-							text={'MAILING ADDRESS:'}
-							stagger={true}
-							letterDelay={10}
-							distance={'3vh'}
-						/>
-					</div>
-					{#each mailingLines as l, i}
-						<div>
-							<TextSlideY text={l} stagger={true} letterDelay={10} delay={100 + 50 * i} />
-						</div>
-					{/each}
+					<div>&nbsp;</div>
 				</div>
 			</div>
 
+			<!-- <div -->
+			<!-- 	class="font-jws text-xs lg:text-sm w-1/2 md:w-1/3 h-full flex items-center justify-center" -->
+			<!-- > -->
+			<!-- 	<div class="flex flex-col items-start justify-center"> -->
+			<!-- 		<div class="text-sm md:text-md lg:text-lg mb-4"> -->
+			<!-- 			<TextSlideY -->
+			<!-- 				text={'MAILING ADDRESS:'} -->
+			<!-- 				stagger={true} -->
+			<!-- 				letterDelay={10} -->
+			<!-- 				distance={'3vh'} -->
+			<!-- 			/> -->
+			<!-- 		</div> -->
+			<!-- 		{#each mailingLines as l, i} -->
+			<!-- 			<div> -->
+			<!-- 				<TextSlideY text={l} stagger={true} letterDelay={10} delay={100 + 50 * i} /> -->
+			<!-- 			</div> -->
+			<!-- 		{/each} -->
+			<!-- 	</div> -->
+			<!-- </div> -->
+
 			<div
-				class="font-jws text-xs lg:text-sm w-1/3 h-full items-center justify-center hidden sm:flex"
+				class="font-jws text-xs lg:text-sm w-1/2 md:w-1/3 h-full items-center justify-center flex"
 			>
 				<div class="flex flex-col items-start justify-center">
 					<div class="text-sm md:text-md lg:text-lg mb-4">
@@ -94,14 +93,21 @@
 						<TextSlideY text={'GOOGLE SCHOLAR'} stagger={true} letterDelay={10} delay={150} />
 					</a>
 					<a
-						aria-label="ACADEMIA.EDU"
+						aria-label="ACADEMIA"
 						href="https://wustl.academia.edu/hhkang"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						<TextSlideY text={'ACADEMIA.EDU'} stagger={true} letterDelay={10} delay={200} />
 					</a>
-					<div>&nbsp;</div>
+					<a
+						aria-label="ORCID"
+						href="https://orcid.org/0000-0002-0893-0427"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<TextSlideY text={'ORCID'} stagger={true} letterDelay={10} delay={250} />
+					</a>
 				</div>
 			</div>
 		</div>

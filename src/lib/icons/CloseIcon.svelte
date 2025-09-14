@@ -1,6 +1,6 @@
 <script lang="ts">
 	let {
-		overlayColor = '#e6e6e6'
+		overlayColor = '#aeb4ae'
 	}: {
 		overlayColor: string;
 	} = $props();

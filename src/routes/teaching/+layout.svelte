@@ -3,7 +3,7 @@
 	import TeachingMobile from '$lib/mobile/TeachingMobile.svelte';
 	import Footer from '$lib/components/overlay/Footer.svelte';
 
-	const textColor: string = '#e6e6e6';
+	const textColor: string = '#aeb4ae';
 
 	let { children } = $props();
 </script>
@@ -23,6 +23,6 @@
 <div class="flex lg:hidden flex-col w-screen">
 	<TeachingMobile {textColor} />
 	<div class="h-56 w-full">
-		<Footer load={true} bg={'#121212'} text={'#e6e6e6'} dark={true} />
+		<Footer load={true} bg={'#121212'} text={'#aeb4ae'} dark={true} />
 	</div>
 </div>

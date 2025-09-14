@@ -27,7 +27,7 @@
 
 	let visible: boolean = $state(false);
 	let innerHeight: number = $state(0);
-	const textColor: string = '#e6e6e6';
+	const textColor: string = '#aeb4ae';
 
 	let scrollY = $state(0);
 	let lenis: any;
@@ -143,8 +143,8 @@
 <svelte:window on:keydown={handleKeydown} bind:innerHeight />
 
 {#if visible}
-	<Logo overlayColor={textColor} sticky={true} {scrollY} />
-	<Tabs overlayColor={textColor} />
+	<Logo overlayColor={'#e6e6e6'} sticky={true} {scrollY} />
+	<Tabs overlayColor={'#e6e6e6'} />
 	<div
 		data-scroll-container
 		class="dark min-h-screen flex flex-col w-[100%] bg-[#121212]"
@@ -168,7 +168,13 @@
 			>
 				<img src={hhkangSteam} alt="HHKang Steam" class="w-full" />
 			</figure>
-			<TitleWords {scrollY} lines={page1Lines} delay={100} load={progress <= 0.05} />
+			<TitleWords
+				color={'#e6e6e6'}
+				{scrollY}
+				lines={page1Lines}
+				delay={100}
+				load={progress <= 0.05}
+			/>
 			<NavUi index={0} dark={true} load={page1Load && progress <= 0.05} scrollTo={indexScrollTo} />
 		</div>
 
@@ -184,8 +190,8 @@
 		</div>
 
 		{#if page2Load}
-			<div class="h-screen w-full bg-black text-[#e6e6e6] relative">
-				<Description3 overlayColor={'#e6e6e6'} />
+			<div class="h-screen w-full bg-black text-[#aeb4ae] relative">
+				<Description3 overlayColor={'#aeb4ae'} />
 				<TitleWords lines={page3Lines} load={page2Content} size={'9vw'} />
 				<NavUi
 					index={2}
@@ -198,8 +204,8 @@
 		{/if}
 
 		{#if page3Load}
-			<div class="h-screen w-full bg-[#121212] text-[#e6e6e6] relative">
-				<Description2 overlayColor={'#e6e6e6'} />
+			<div class="h-screen w-full bg-[#121212] text-[#aeb4ae] relative">
+				<Description2 overlayColor={'#aeb4ae'} />
 				<TitleWords lines={page2Lines} load={page3Content} />
 				<NavUi index={3} dark={true} load={page3Content} unload={true} scrollTo={indexScrollTo} />
 			</div>

@@ -13,7 +13,7 @@
 	let selectedIndex: number = $state(-1);
 
 	const backgroundColor: string = '#121212';
-	const textColor: string = '#e6e6e6';
+	const textColor: string = '#aeb4ae';
 
 	function onMouseEnter(work: Work) {
 		selectedIndex = work.index >= 15 ? -1 : work.index;
@@ -43,7 +43,9 @@
 	<div
 		class=" h-full w-full xl:w-[50%] float-left px-8 xl:px-0 pt-32 xl:pt-56 pb-16 xl:pb-32 flex justify-end"
 	>
-		<div class="h-full w-full xl:w-3/4 2xl:w-2/3 prose prose-dark font-crimson max-w-none">
+		<div
+			class="h-full w-full xl:w-3/4 2xl:w-2/3 prose prose-dark no-underline font-crimson max-w-none"
+		>
 			{#each Object.entries(works) as [k, v]}
 				<h2
 					class="transform-[opacity] duration-200 font-bold"

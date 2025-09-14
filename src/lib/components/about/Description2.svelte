@@ -18,7 +18,7 @@
 	</figure>
 
 	<div
-		class="absolute left-[60vw] top-[55vh] w-[50ch] font-crimson text-base 2xl:text-[1.3rem] text-[#e6e6e6] mix-blend-difference prose prose-dark"
+		class="absolute left-[60vw] top-[55vh] w-[50ch] font-crimson text-base 2xl:text-[1.3rem] text-[#aeb4ae] mix-blend-difference prose prose-dark"
 	>
 		Kang collects and disassembles matchlock guns from the early modern period to reverse engineer
 		their mechanisms and reconstruct the systems of knowledge, use, and production around them. His

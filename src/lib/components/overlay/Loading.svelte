@@ -8,7 +8,7 @@
 </script>
 
 <div
-	class="h-screen w-screen bg-[#121212] text-[#e6e6e6] font-crimson text-3xl
+	class="h-screen w-screen bg-[#121212] text-[#aeb4ae] font-crimson text-3xl
         flex items-start justify-start pl-8 pt-8"
 >
 	<!-- {`${progress}`} -->

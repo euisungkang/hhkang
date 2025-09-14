@@ -24,14 +24,14 @@
 {#if index > 0}
 	<div
 		class="inline-block absolute top-12 right-12 font-crimson text-lg"
-		style:color={dark ? '#e6e6e6' : '#121212'}
+		style:color={dark ? '#aeb4ae' : '#121212'}
 	>
 		<TextSlideX {load} text={`_${index}`} />
 	</div>
 
 	<div
 		class="absolute flex justify-end top-24 right-12 items-end"
-		style:color={dark ? '#e6e6e6' : '#121212'}
+		style:color={dark ? '#aeb4ae' : '#121212'}
 	>
 		<!-- Middle -->
 		<div class="space-y-2 2xl:space-y-4 flex flex-col items-center justify-end">
@@ -75,7 +75,7 @@
 			<div in:slide={{ duration: 750, delay: 1000, easing: sineOut }}>
 				<svg width="auto" height="2vh" viewBox="0 0 14 14">
 					<polygon
-						fill={dark ? '#e6e6e6' : '#121212'}
+						fill={dark ? '#aeb4ae' : '#121212'}
 						points="7 11.04 6.08 11.04 6.08 7.89 2.96 7.89 2.96 6.1 6.08 6.1 6.08 2.96 7.92 2.96 7.92 6.1 11.04 6.1 11.04 7.89 7.92 7.89 7.92 11.04"
 					></polygon>
 				</svg>
@@ -89,7 +89,7 @@
 		<div
 			class="trasition-[height] duration-750 delay-500 ease-out border-l"
 			style:height={load ? '5vh' : '0px'}
-			style:border-color={dark ? '#e6e6e6' : '#121212'}
+			style:border-color={dark ? '#aeb4ae' : '#121212'}
 		></div>
 	</div>
 {/snippet}

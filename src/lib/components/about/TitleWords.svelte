@@ -6,20 +6,23 @@
 		scrollY = 0,
 		load = true,
 		delay = 0,
-		size = '10vw'
+		size = '10vw',
+		color = '#aeb4ae'
 	}: {
 		lines: Array<string>;
 		scrollY?: number;
 		load?: boolean;
 		delay?: number;
 		size?: string;
+		color?: string;
 	} = $props();
 </script>
 
 <div
 	class="absolute flex flex-col items-start justify-start top-0 left-0 mix-blend-difference z-10
-        leading-[7.5vw] overflow-hidden font-baskervville text-[#e6e6e6] w-full h-full select-none pointer-events-none"
+        leading-[7.5vw] overflow-hidden font-baskervville w-full h-full select-none pointer-events-none"
 	style="transform: translateY({scrollY}px);"
+	style:color
 >
 	<div class="relative w-full h-screen flex flex-col">
 		{#each lines as line, i}

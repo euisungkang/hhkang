@@ -8,7 +8,7 @@
 	import Footer from '$lib/components/overlay/Footer.svelte';
 	import { onMount } from 'svelte';
 
-	let overlayColor: string = '#e6e6e6';
+	let overlayColor: string = '#aeb4ae';
 
 	let scrollY: number = $state(0);
 	let loadedOnce: boolean = $state(false);
@@ -52,6 +52,6 @@
 	</video>
 
 	<div class="absolute w-full h-[25vh] -bottom-[25vh] left-0 bg-black">
-		<Footer load={scrollY > 0} bg={'#000000'} text={'#e6e6e6'} dark={true} />
+		<Footer load={scrollY > 0} bg={'#000000'} text={'#aeb4ae'} dark={true} />
 	</div>
 </div>

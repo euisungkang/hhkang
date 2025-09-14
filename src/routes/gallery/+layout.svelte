@@ -9,6 +9,6 @@
 	{@render children()}
 
 	<div class="h-56 xl:h-96 w-full">
-		<Footer load={true} bg={'#121212'} text={'#e6e6e6'} dark={true} />
+		<Footer load={true} bg={'#121212'} text={'#aeb4ae'} dark={true} />
 	</div>
 </div>
