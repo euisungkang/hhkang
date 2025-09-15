@@ -98,7 +98,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<TextSlideY text={'ACADEMIA.EDU'} stagger={true} letterDelay={10} delay={200} />
+						<TextSlideY text={'ACADEMIA'} stagger={true} letterDelay={10} delay={200} />
 					</a>
 					<a
 						aria-label="ORCID"
