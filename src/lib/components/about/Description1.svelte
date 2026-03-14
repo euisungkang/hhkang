@@ -33,9 +33,7 @@
 					research on this subject has received international awards including the 2021
 					International Committee on the History of Technology Turriano Prize and the 2021
 					International Council of Asia Scholars Book Prize (English—Best Dissertation in the
-					Humanities). The work has been supported by grants and fellowships from the American
-					Council of Learned Societies, the Andrew F. Mellon Foundation, and the American Historical
-					Association.
+					Humanities).
 
 					<br /><br />
 					Kang is in the early stages of writing two other books on Korean science.

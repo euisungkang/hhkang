@@ -38,9 +38,7 @@
 		knowledge-making in partnership with the Chosŏn Korean (1392–1910) state. His research on this
 		subject has received international awards including the 2021 International Committee on the
 		History of Technology Turriano Prize and the 2021 International Council of Asia Scholars Book
-		Prize (English—Best Dissertation in the Humanities). The work has been supported by grants and
-		fellowships from the American Council of Learned Societies, the Andrew F. Mellon Foundation, and
-		the American Historical Association.
+		Prize (English—Best Dissertation in the Humanities).
 
 		<br /><br />
 		Kang is in the early stages of writing two other books on Korean science.
@@ -70,8 +68,7 @@
 		<a
 			href="https://read.dukeupress.edu/journal-of-asian-studies/article-abstract/83/1/116/384189/Kingpins-at-CourtContraband-Diplomacy-between?redirectedFrom=fulltext"
 			target="_blank">Journal of Asian Studies</a
-		>
-		, among others.
+		>, among others.
 
 		<br /><br />
 		Kang was an
