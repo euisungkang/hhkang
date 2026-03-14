@@ -26,10 +26,9 @@
 		he studied at Emory University and Harvard University, where he earned his Ph.D. in History and East
 		Asian Languages. He joined the WashU faculty in 2021 as
 		<a href="https://ealc.wustl.edu/" target="_blank"
-			>Assistant Professor of East Asian Language
-		</a>
-		and Cultures, from Johns Hopkins University where he held a D. Kim Foundation Postdoctoral Fellowship
-		in the Department of the History of Science and Technology in 2020–21.
+			>Assistant Professor of East Asian Language and Cultures
+		</a>, from Johns Hopkins University where he held a D. Kim Foundation Postdoctoral Fellowship in
+		the Department of the History of Science and Technology in 2020–21.
 	</div>
 
 	<div class="text-md">
@@ -42,7 +41,7 @@
 
 		<br /><br />
 		Kang is in the early stages of writing two other books on Korean science.
-		<i>Wisdom that Works</i>
+		<i>Working Wisdom</i>
 		examines eighteenth-century army men, rustic scholars, and noblewomen who contributed to a practical
 		turn in Korean learning, by translating foreign knowledge into “everyday technologies” ranging from
 		cooking and husbandry to medicine and magic.

@@ -22,9 +22,11 @@
 				<div>
 					Professor H. H. Kang grew up in Guatemala City, Guatemala. After completing secondary
 					school there, he studied at Emory University and Harvard University, where he earned his
-					Ph.D. in History and East Asian Languages. He joined the WashU faculty in 2021 from Johns
-					Hopkins University, where he held a D. Kim Foundation Postdoctoral Fellowship in the
-					Department of the History of Science and Technology in 2020–21.
+					Ph.D. in History and East Asian Languages. He joined the WashU faculty in 2021 as
+					<a href="https://ealc.wustl.edu/" target="_blank"
+						>Assistant Professor of East Asian Language and Cultures
+					</a>, from Johns Hopkins University where he held a D. Kim Foundation Postdoctoral
+					Fellowship in the Department of the History of Science and Technology in 2020–21.
 					<br /><br />
 
 					Kang’s first book, under contract with the University of Chicago Press, examines how
@@ -37,7 +39,7 @@
 
 					<br /><br />
 					Kang is in the early stages of writing two other books on Korean science.
-					<i>Wisdom that Works</i>
+					<i>Working Wisdom</i>
 					examines eighteenth-century army men, rustic scholars, and noblewomen who contributed to a practical
 					turn in Korean learning, by translating foreign knowledge into “everyday technologies” ranging
 					from cooking and husbandry to medicine and magic.

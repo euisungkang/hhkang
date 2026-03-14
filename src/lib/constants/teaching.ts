@@ -3,6 +3,7 @@ import kitchenstudio from '$lib/media/kitchenstudio.webp';
 import material from '$lib/media/material.webp';
 import kciv from '$lib/media/kciv.webp';
 import stem from '$lib/media/stem.webp';
+import rebels from '$lib/media/rebels.webp';
 
 export type Image = {
   image: string,
@@ -23,6 +24,14 @@ export const images: Array<Image> = [
     subtitle: 'Cultures of Making in East Asia',
     type: 'Undergraduate Seminar',
     url: 'https://www.kitchenstudiofactory.com/',
+  },
+  {
+    image: rebels,
+    backgroundColor: '#1a2a1e',
+    overlayColor: '#a8c4a0',
+    title: 'Rebels and Healers',
+    subtitle: 'Everyday Life in Early Modern Korea',
+    type: 'Undergraduate Seminar',
   },
   {
     image: imaginedpasts,

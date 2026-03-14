@@ -6,6 +6,7 @@
 	import Tabs from '$lib/components/overlay/Tabs.svelte';
 	import Logo from '$lib/components/overlay/Logo.svelte';
 	import KitchenStudioOverlay from '$lib/components/overlay/teaching/KitchenStudioOverlay.svelte';
+	import RebelsHealersOverlay from '$lib/components/overlay/teaching/RebelsHealersOverlay.svelte';
 	import ImaginedPastsOverlay from '$lib/components/overlay/teaching/ImaginedPastsOverlay.svelte';
 	import MaterialCultureOverlay from '$lib/components/overlay/teaching/MaterialCultureOverlay.svelte';
 	import KoreanCivOverlay from '$lib/components/overlay/teaching/KoreanCivOverlay.svelte';
@@ -51,8 +52,8 @@
 		const maxDelta = innerWidth / 2;
 		const rawPercentage = (mouseDelta / maxDelta) * -100;
 
-		// 54 (104) = 14 * 7 + 6 (gaps 1)
-		percentage = Math.max(Math.min(rawPercentage + mouseUpX, 50), -54);
+		// 69 = 14 * 8 + 7 (gaps 1) for 6 images
+		percentage = Math.max(Math.min(rawPercentage + mouseUpX, 50), -69);
 		imagePercentage = percentage / 2 + 50;
 		grayscaleIndex = Math.min(
 			// 15 = 14 (width) + 1
@@ -168,12 +169,14 @@
 			{#if selectedIndex == 0}
 				<KitchenStudioOverlay color={colorState.overlayColor} {letterReverse} />
 			{:else if selectedIndex == 1}
-				<ImaginedPastsOverlay color={colorState.overlayColor} {letterReverse} />
+				<RebelsHealersOverlay color={colorState.overlayColor} {letterReverse} />
 			{:else if selectedIndex == 2}
-				<MaterialCultureOverlay color={colorState.overlayColor} {letterReverse} />
+				<ImaginedPastsOverlay color={colorState.overlayColor} {letterReverse} />
 			{:else if selectedIndex == 3}
-				<KoreanCivOverlay color={colorState.overlayColor} {letterReverse} />
+				<MaterialCultureOverlay color={colorState.overlayColor} {letterReverse} />
 			{:else if selectedIndex == 4}
+				<KoreanCivOverlay color={colorState.overlayColor} {letterReverse} />
+			{:else if selectedIndex == 5}
 				<StemOverlay color={colorState.overlayColor} {letterReverse} />
 			{/if}
 		</div>
