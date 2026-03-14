@@ -1,5 +1,6 @@
 <script lang="ts">
-	import profile from '$lib/media/p.webp';
+	// import profile from '$lib/media/p.webp';
+	const profile: string = 'https://ik.imagekit.io/easton/hhkang/images/Profile1.jpg';
 	import TextSlideX from '../effects/TextSlideX.svelte';
 
 	let {
@@ -16,7 +17,7 @@
 	<div class="w-[70vw] h-[90vh] overflow-hidden pt-20">
 		<div class="w-full h-12/12 flex">
 			<div
-				class="w-[50%] h-full text-base 2xl:text-[1.3rem] flex items-start font-crimson pr-2 prose prose-light"
+				class="w-[50%] h-full text-base 2xl:text-[1.2rem] flex items-start font-crimson pr-2 prose prose-light"
 			>
 				<div>
 					Professor Hyeok Hweon “H. H.” Kang grew up in Guatemala City, Guatemala. He received his
@@ -26,8 +27,8 @@
 					<a href="https://ealc.wustl.edu/" target="_blank"> East Asian Languages and Cultures</a>.
 					<br /><br />
 					Kang’s first book, <i>Artisanal Heart: State, Craft, and Science in Early Modern Korea</i>
-					(under contract with the University of Chicago Press), examines how the Chosŏn (1392–1910)
-					state supported its artisans and “ingeniators,” fostering a vibrant culture of mechanical scholarship
+					(under contract with the University of Chicago Press), examines how the Chosŏn (1392–1910) state
+					supported its artisans and “ingeniators,” fostering a vibrant culture of mechanical scholarship
 					and material production. His research on this subject has received international awards including
 					the Joan Cahalin Robinson Prize from the
 					<a href="https://www.historyoftechnology.org/" target="_blank">
@@ -62,7 +63,7 @@
 				</div>
 			</div>
 
-			<figure class="w-[50%] h-full pr-12">
+			<figure class="w-[50%] h-full pr-0">
 				<img src={profile} alt="Saltpeter" class="object-cover h-full float-right" />
 			</figure>
 		</div>
