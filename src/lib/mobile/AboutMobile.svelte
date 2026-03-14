@@ -21,70 +21,66 @@
 	style:color={textColor}
 >
 	<div class="text-md">
-		Professor Hyeok Hweon “H. H.” Kang grew up in Guatemala City, Guatemala. He received his B.A.
-		from Emory University and Ph.D. in History and East Asian Languages from Harvard University. A
-		historian of early modern Korea, he joined the WashU faculty in 2021 as Assistant Professor of
-		<a href="https://ealc.wustl.edu/" target="_blank"> East Asian Languages and Cultures</a>.
+		<!-- <a href="https://ealc.wustl.edu/" target="_blank"> East Asian Languages and Cultures</a>. -->
+		Professor H. H. Kang grew up in Guatemala City, Guatemala. After completing secondary school there,
+		he studied at Emory University and Harvard University, where he earned his Ph.D. in History and East
+		Asian Languages. He joined the WashU faculty in 2021 as
+		<a href="https://ealc.wustl.edu/" target="_blank"
+			>Assistant Professor of East Asian Language
+		</a>
+		and Cultures, from Johns Hopkins University where he held a D. Kim Foundation Postdoctoral Fellowship
+		in the Department of the History of Science and Technology in 2020–21.
 	</div>
 
 	<div class="text-md">
-		Kang’s first book, <i>Artisanal Heart: State, Craft, and Science in Early Modern Korea</i>
-		(under contract with the University of Chicago Press), examines how the Chosŏn (1392–1910) state
-		supported its artisans and “ingeniators,” fostering a vibrant culture of mechanical scholarship and
-		material production. His research on this subject has received international awards including the
-		Joan Cahalin Robinson Prize from the
-		<a href="https://www.historyoftechnology.org/" target="_blank">
-			Society for the History of Technology
-		</a>; the ICAS Book Prize (Best Dissertation in the Humanities) from the
-		<a href="https://icas.asia/" target="_blank">International Convention of Asia Scholars </a>; and
-		the Juanelo Turriano Prize from the
-		<a href="https://www.icohtec.org/" target="_blank">
-			International Committee for the History of Technology
-		</a>.
+		Kang’s first book, under contract with the University of Chicago Press, examines how artisans
+		and “ingeniators” (leaders of artisans) shaped a vibrant culture of material design and
+		knowledge-making in partnership with the Chosŏn Korean (1392–1910) state. His research on this
+		subject has received international awards including the 2021 International Committee on the
+		History of Technology Turriano Prize and the 2021 International Council of Asia Scholars Book
+		Prize (English—Best Dissertation in the Humanities). The work has been supported by grants and
+		fellowships from the American Council of Learned Societies, the Andrew F. Mellon Foundation, and
+		the American Historical Association.
+
 		<br /><br />
-		In 2023–24, Kang was awarded an
-		<a href="https://www.acls.org/" target="_blank">
-			American Council of Learned Societies Fellowship
-		</a>. In 2020–21, he held a
-		<a href="http://dkimfoundation.org/wp5/" target="_blank"> D. Kim Foundation </a>
-		Postdoctoral Fellowship at the
-		<a href="https://host.jhu.edu/" target="_blank">
-			Department of the History of Science and Technology
-		</a>
-		at Johns Hopkins University. Currently, he co-chairs the
-		<a href="https://fhsasiahss.wordpress.com/" target="_blank">
-			Forum for the History of Science in Asia
-		</a>
-		at the <a href="https://hssonline.org/" target="_blank">History of Science Society</a>.
+		Kang is in the early stages of writing two other books on Korean science.
+		<i>Wisdom that Works</i>
+		examines eighteenth-century army men, rustic scholars, and noblewomen who contributed to a practical
+		turn in Korean learning, by translating foreign knowledge into “everyday technologies” ranging from
+		cooking and husbandry to medicine and magic.
+		<i>Mr. Five Continents</i> centers Yi Kyugyŏng (1788–1856), a rustic bibliophile whose works
+		were written under his style name “Five Continents,” embodying his ambition to master global
+		science and technology from his provincial study on the eve of high imperialism.
 		<br /><br />
-		Professor Kang’s research focuses on the intellectual and cultural history of Chosŏn Korea. He is
-		particularly interested in how socially marginalized people, like artisans and practitioners, studied
-		the natural world, made useful things, and transformed elite learning and political institutions.
-		<br /><br />
-		Professor Kang has wide-ranging interests in digital humanities and material culture studies. His
-		projects include a network analysis of international criminals in seventeenth-century Nagasaki, published
-		in the
+		Kang maintains wide-ranging research and teaching interests in early modern science and technology,
+		material culture studies, digital humanities, and global history. His works have appeared in
 		<a
-			href="https://culturalanalytics.org/article/68188-how-network-analysis-uncovers-international-networks-of-smuggling-history-criminals-in-nagasaki-japan-circa-1667"
-			target="_blank"
+			href="https://www.journals.uchicago.edu/doi/abs/10.1086/718283?journalCode=isis"
+			target="_blank">Isis</a
+		>,
+		<a href="https://www.tandfonline.com/doi/full/10.1080/07341512.2022.2153206" target="_blank"
+			>History and Technology</a
+		>,
+		<a href="https://muse.jhu.edu/pub/5/article/957972/pdf" target="_blank"
+			>Journal of World History</a
+		>,
+		<a href="https://culturalanalytics.org/article/id/1299/" target="_blank"
+			>Journal of Cultural Analytics</a
+		>, and
+		<a
+			href="https://read.dukeupress.edu/journal-of-asian-studies/article-abstract/83/1/116/384189/Kingpins-at-CourtContraband-Diplomacy-between?redirectedFrom=fulltext"
+			target="_blank">Journal of Asian Studies</a
 		>
-			<i>Journal of Cultural Analytics</i>
-		</a>
-		. He also collaborates with imaging scientists, game designers, and mechanical engineers to critically
-		“rework” historical material culture. This work spans CT scanning of artifacts, 3D modeling of artisanal
-		drawings, and prototype fabrication for experimental testing—applied across a diverse array of objects
-		such as sundials, water pumps, and steam engines.
+		, among others.
+
 		<br /><br />
-		Kang collects and disassembles matchlock guns from the early modern period to reverse engineer their
-		mechanisms and reconstruct the systems of knowledge, use, and production around them. His research
-		on the subject was published in
-		<a href="https://www.tandfonline.com/doi/full/10.1080/07341512.2022.2153206" target="_blank">
-			<i> History and Technology </i>
+		Kang was an
+		<a href="https://www.acls.org/" target="_blank"
+			>American Council of Learned Societies Fellow
 		</a>
-		and the
-		<a href="https://muse.jhu.edu/pub/5/article/957972/pdf" target="_blank">
-			<i>Journal of World History</i>
-		</a>
-		. His collection includes artifacts from Chosŏn Korea, Tokugawa Japan, and Portuguese Malacca.
+		in 2023–24. He is currently serving as co-chair of the Forum for the History of Science in Asia at
+		the
+		<a href="https://hssonline.org/" target="_blank">History of Science Society</a>.
+		<a href="https://ealc.wustl.edu/" target="_blank">East Asian Languages and Cultures</a>
 	</div>
 </div>
