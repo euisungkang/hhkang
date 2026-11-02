@@ -1,1 +1,1 @@
-Moved & development continues in https://github.com/kanghistorian/hhkang
+Moved project & development to https://github.com/kanghistorian/hhkang
